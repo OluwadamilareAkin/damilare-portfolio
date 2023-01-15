@@ -17,18 +17,18 @@ const Footer = ({ language, setLanguage }) => {
             <div className="row g-5">
               <div className="col-12 col-md-7">
                 <h4 className="fw-bold mb-2">
-                  {language === "ge"
+                  {language === "de"
                     ? "Begeistert von meinem Portfolio?"
                     : "Excited with my portfolio?"}
                 </h4>
                 <p className="lh-3 opaq mb-3">
-                  {language === "ge"
+                  {language === "de"
                     ? "Ich bin bereit, Teil Ihres Teams zu werden. Gemeinsam können wir Ihren Kunden das beste Nutzererlebnis bieten."
                     : "I am set to be a part of your team. Together we can give your customers the best user experience."}
                 </p>
                 <button className="btn my-btn py-2 px-3">
                   <span className="me-3">
-                    {language === "ge"
+                    {language === "de"
                       ? "Lebenslauf Herunterladen"
                       : "Download Resume"}
                   </span>{" "}
@@ -42,7 +42,7 @@ const Footer = ({ language, setLanguage }) => {
                   </div>
                   <div>
                     <p className="mb-0 opaq text-uppercase small">
-                      {language === "ge"
+                      {language === "de"
                         ? "Chatten Sie mit mir"
                         : "Chat with me"}
                     </p>
@@ -56,7 +56,7 @@ const Footer = ({ language, setLanguage }) => {
                   </div>
                   <div>
                     <p className="mb-0 opaq text-uppercase small">
-                      {language === "ge" ? "Rufen Sie mich an" : "Call me"}
+                      {language === "de" ? "Rufen Sie mich an" : "Call me"}
                     </p>
                     <p className="mb-0 text-md">+491786688559</p>
                   </div>
@@ -94,7 +94,7 @@ const Footer = ({ language, setLanguage }) => {
               </div>
               <div className="col-12 col-md-3">
                 <p className="mb-2 small">
-                  {language === "ge" ? "Folge mir" : "Follow Me"}
+                  {language === "de" ? "Folge mir" : "Follow Me"}
                 </p>
                 <TbBrandLinkedin className="me-3 cursor" size={33} />
                 <TbBrandInstagram className="me-3 cursor" size={33} />

@@ -27,7 +27,7 @@ const Home = ({ language, setLanguage }) => {
                   alt="Oluwadamilare Vincent Akinyoyenu"
                 />
                 <div className="py-4 px-1 px-md-3">
-                  {language === "ge" ? (
+                  {language === "de" ? (
                     <>
                       <h5 className="lh-3 fw-bold mb-4">
                         Hallo, ich bin Oluwadamilare Vincent Akinyoyenu,
@@ -76,7 +76,7 @@ const Home = ({ language, setLanguage }) => {
         <div className="row">
           <div className="col-12 col-md-12 mx-auto">
             <div className="px-3">
-              {language === "ge" ? (
+              {language === "de" ? (
                 <>
                   <h4 className="fw-bold">Ein wenig über mich</h4>
                   <p className="lh-2">
@@ -160,7 +160,7 @@ const Home = ({ language, setLanguage }) => {
           <div className="d-flex align-items-center justify-content-between px-3 mb-4">
             <div>
               <h4 className="fw-bold">
-                {language === "ge" ? "Projekte" : "Projects"}
+                {language === "de" ? "Projekte" : "Projects"}
               </h4>
             </div>
             <div>
@@ -185,7 +185,7 @@ const Home = ({ language, setLanguage }) => {
               <div className="row g-5">
                 <div className="col-12 col-md-6">
                   <h4 className="fw-bold mb-3">
-                    {language === "ge"
+                    {language === "de"
                       ? "Erfahrungsberichte von Arbeitgebern und Kunden"
                       : "Employers and Clients Testimonial"}
                   </h4>
@@ -213,12 +213,12 @@ const Home = ({ language, setLanguage }) => {
                     </div>
                   </div>
                   <h4 className="fw-bold mb-3">
-                    {language === "ge"
+                    {language === "de"
                       ? "Meine Dienstleistungen"
                       : "My Services"}
                   </h4>
                   <ul className="lh-3">
-                    {language === "ge" ? (
+                    {language === "de" ? (
                       <>
                         <li>Webgestaltung</li>
                         <li>Gemeinsames Branding und Grafikdesign</li>

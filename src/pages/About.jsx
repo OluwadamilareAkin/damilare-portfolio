@@ -12,23 +12,23 @@ const Home = ({ language, setLanguage }) => {
           <div className="col-12">
             <div className="px-3">
               <h4 className="fw-bold text-center mb-3">
-                {language === "ge"
+                {language === "de"
                   ? "Ich freue mich, Sie kennenzulernen"
                   : "I am happy to meet you"}
               </h4>
               <p className="opaq lh-3 mb-5">
-                {language === "ge"
+                {language === "de"
                   ? "Ich bin UI/UX-Designer und lebe in Berlin, Deutschland. UX ist zentral für alles, was ich tue. Ich liebe es, an sinnvollen Projekten mit inspirierenden, kreativen Menschen zu arbeiten, die den Status quo mit dem Fokus auf User Experience in Frage stellen."
                   : "I am a UI/UX designer living in Berlin, Germany. UX is central to everything I do. I love to work on meaningful projects with inspiring, creative people that challenge the status quo with a focus on user experience."}
               </p>
-              <div className="bg-blue rounded px-4 px-md-5 py-5 text-white mb-5">
+              <div className="bg-blue rounded px-3 px-md-5 py-5 text-white mb-5">
                 <h5 className="fw-bold text-center mb-5 lh-3">
-                  {language === "ge"
+                  {language === "de"
                     ? "Wie ich Design als Problemlösungsinstrument einsetze."
                     : "How I leverage design as a problem-solving tool"}
                 </h5>
                 <div className="row g-5 px-lg-5">
-                  {language === "ge" ? (
+                  {language === "de" ? (
                     <>
                       <div className="col-12 col-md-6">
                         <p className="opaq">
@@ -150,12 +150,12 @@ const Home = ({ language, setLanguage }) => {
                 </div>
               </div>
 
-              <div className="bg-blue rounded px-4 px-md-5 py-5 text-white mb-5">
+              <div className="bg-blue rounded px-3 px-md-5 py-5 text-white mb-5">
                 <h5 className="fw-bold text-center mb-3 lh-3">
-                  {language === "ge" ? "Werkzeuge" : "Tools"}
+                  {language === "de" ? "Werkzeuge" : "Tools"}
                 </h5>
                 <p className="opaq lh-3 px-lg-5 mb-5">
-                  {language === "ge"
+                  {language === "de"
                     ? 'Werkzeuge sind großartig, aber sind sie auch wichtig? Die Ergebnisse sind das, was die Welt sehen will. Ich habe meine Karriere als Designer mit Adobe Photoshop begonnen. Seitdem habe ich mich dazu durchgerungen, so viele Geräte wie möglich zu benutzen, ohne einem anderen Werkzeug, das meinen Arbeitsprozess möglicherweise verbessern könnte, negativ gegenüberzustehen oder es zu überhöhen. In einem der Designbücher, die ich vor einiger Zeit gelesen habe, habe ich dieses Zitat gelesen: "Der frühe Vogel fängt den Wurm". Ich lese nicht nur Blogs über ein neues Tool, ich kämpfe mich wirklich durch und mache mich mit ihm vertraut.'
                     : 'Tools are great but do they matter? The results are what the world wants to see. I began my design career using Adobe Photoshop. Since then, I have driven myself to advance whatever number of devices would be prudent without being negative or pompous of another tool that might possibly improve my work process. I saw this quote in one of the design books I read sometimes ago, "the early bird gets the worm". I do not just read blogs about a new tool, I really battle through and get familiar with it.'}
                 </p>
@@ -245,7 +245,7 @@ const Home = ({ language, setLanguage }) => {
 
               <div className="col-12 mb-5">
                 <p className="px-3">
-                  {language === "ge" ? (
+                  {language === "de" ? (
                     <>
                       Als ich im westlichen Teil Nigerias aufwuchs, war ich
                       fasziniert von den Technikern und wie sie die Probleme der

@@ -40,7 +40,7 @@ const Navbar = ({ language, setLanguage }) => {
                 >
                   <TbX />
                 </div>
-                {language === "ge" ? (
+                {language === "de" ? (
                   <ul className="list-style-none">
                     {location === "/" ? (
                       <li className="active">
@@ -122,7 +122,7 @@ const Navbar = ({ language, setLanguage }) => {
                     className="form-select cursor shadow-none bg-inherit me-3 me-md-0 py-1"
                   >
                     <option value="en">EN</option>
-                    <option value="ge">GE</option>
+                    <option value="de">DE</option>
                   </select>
                   <TbMenu2
                     onClick={() => {

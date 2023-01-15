@@ -13,13 +13,13 @@ const NotFound = ({ language, setLanguage }) => {
             <div className="py-5 my-5 text-center">
               <h1 className="display-3 fw-bold">404</h1>
               <p className="mb-4">
-                {language === "ge"
+                {language === "de"
                   ? "Seite nicht gefunden!"
                   : "Page not found!"}
               </p>
               <Link to="/">
                 <button className="btn my-btn px-4">
-                  {language === "ge" ? "Zurück zuhause" : "Back Home"}
+                  {language === "de" ? "Zurück zuhause" : "Back Home"}
                 </button>
               </Link>
             </div>
