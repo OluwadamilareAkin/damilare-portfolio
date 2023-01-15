@@ -3,7 +3,6 @@ import {
   TbBrandInstagram,
   TbBrandLinkedin,
   TbBrandTwitter,
-  TbBrandWhatsapp,
   TbDownload,
   TbMail,
   TbPhone,
