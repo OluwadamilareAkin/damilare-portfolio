@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -6,19 +6,47 @@ import "bootstrap/dist/js/bootstrap.bundle";
 
 import "./assets/css/style.css";
 
-//importing english pages
-import { About, Contact, Home, NotFound, Projects } from "./en/index";
+import { About, Contact, Home, NotFound, Projects } from "./pages/index";
 
 const App = () => {
+  const [language, setLanguage] = useState([]);
+
+  useEffect(() => {
+    const lang = localStorage.getItem("language");
+    if (lang) {
+      setLanguage(lang);
+    } else {
+      setLanguage("en");
+    }
+  }, []);
+
   return (
     <>
       <Router>
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/en/about" element={<About />} />
-          <Route exact path="/en/contact" element={<Contact />} />
-          <Route exact path="/en/project" element={<Projects />} />
-          <Route path="*" element={<NotFound />} />
+          <Route
+            exact
+            path="/"
+            element={<Home language={language} setLanguage={setLanguage} />}
+          />
+          <Route
+            exact
+            path="/about"
+            element={<About language={language} setLanguage={setLanguage} />}
+          />
+          <Route
+            exact
+            path="/contact"
+            element={<Contact language={language} setLanguage={setLanguage} />}
+          />
+          <Route
+            path="/project"
+            element={<Projects language={language} setLanguage={setLanguage} />}
+          />
+          <Route
+            path="*"
+            element={<NotFound language={language} setLanguage={setLanguage} />}
+          />
         </Routes>
       </Router>
     </>

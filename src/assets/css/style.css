@@ -86,7 +86,7 @@ a {
   line-height: 1.7rem !important;
 }
 .opaq {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 .text-md {
   font-size: 0.87rem;
@@ -194,4 +194,50 @@ hr.bg-blue {
   border-right: 16px solid transparent;
   bottom: -1rem;
   left: 1.6rem;
+}
+.opaq-1 {
+  opacity: 0.9;
+}
+.tools-img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+}
+@media screen and (max-width: 767px) {
+  .sidebar {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    color: white;
+    height: 100%;
+    top: -0.5rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999;
+    text-align: center;
+    font-weight: 600;
+    display: none;
+  }
+  .list-style-none {
+    width: 100%;
+    margin-top: 8rem;
+  }
+  .list-style-none li {
+    display: block;
+    margin-right: 0rem !important;
+    opacity: 0.8;
+    font-size: 1.5rem;
+    margin-bottom: 2.4rem;
+  }
+  div.close {
+    position: absolute;
+    right: 2rem;
+    top: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .sidebar.true {
+    display: block !important;
+  }
 }

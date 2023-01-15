@@ -8,7 +8,7 @@ import {
   TbPhone,
 } from "react-icons/tb";
 
-const Footer = () => {
+const Footer = ({ language, setLanguage }) => {
   return (
     <>
       <footer className="mt-4">
@@ -16,13 +16,23 @@ const Footer = () => {
           <div className="container">
             <div className="row g-5">
               <div className="col-12 col-md-7">
-                <h4 className="fw-bold mb-2">Excited with my portfolio?</h4>
+                <h4 className="fw-bold mb-2">
+                  {language === "ge"
+                    ? "Begeistert von meinem Portfolio?"
+                    : "Excited with my portfolio?"}
+                </h4>
                 <p className="lh-3 opaq mb-3">
-                  I am set to be a part of your team. Together we can give your
-                  customers the best user experience.
+                  {language === "ge"
+                    ? "Ich bin bereit, Teil Ihres Teams zu werden. Gemeinsam können wir Ihren Kunden das beste Nutzererlebnis bieten."
+                    : "I am set to be a part of your team. Together we can give your customers the best user experience."}
                 </p>
                 <button className="btn my-btn py-2 px-3">
-                  <span className="me-3">Download Resume</span> <TbDownload />
+                  <span className="me-3">
+                    {language === "ge"
+                      ? "Lebenslauf Herunterladen"
+                      : "Download Resume"}
+                  </span>{" "}
+                  <TbDownload />
                 </button>
               </div>
               <div className="col-12 col-md-5">
@@ -32,7 +42,9 @@ const Footer = () => {
                   </div>
                   <div>
                     <p className="mb-0 opaq text-uppercase small">
-                      Chat with me
+                      {language === "ge"
+                        ? "Chatten Sie mit mir"
+                        : "Chat with me"}
                     </p>
                     <p className="mb-0 text-md">vindamilare@gmail.com</p>
                   </div>
@@ -43,7 +55,9 @@ const Footer = () => {
                     <TbPhone className="text-blue" size={35} />
                   </div>
                   <div>
-                    <p className="mb-0 opaq text-uppercase small">Call me</p>
+                    <p className="mb-0 opaq text-uppercase small">
+                      {language === "ge" ? "Rufen Sie mich an" : "Call me"}
+                    </p>
                     <p className="mb-0 text-md">+491786688559</p>
                   </div>
                 </div>
@@ -79,7 +93,9 @@ const Footer = () => {
                 </p>
               </div>
               <div className="col-12 col-md-3">
-                <p className="mb-2 small">Follow Me</p>
+                <p className="mb-2 small">
+                  {language === "ge" ? "Folge mir" : "Follow Me"}
+                </p>
                 <TbBrandLinkedin className="me-3 cursor" size={33} />
                 <TbBrandInstagram className="me-3 cursor" size={33} />
                 <TbBrandTwitter className="cursor" size={33} />
