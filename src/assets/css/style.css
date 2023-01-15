@@ -4,6 +4,7 @@
   --bg-body: #c4c4c4;
   --bg-text: #181616;
   --bg-blue: #100bf5;
+  --bg-light: rgba(16, 11, 245, 0.5);
 }
 * {
   box-sizing: border-box;
@@ -81,6 +82,9 @@ a {
 .lh-3 {
   line-height: 1.9rem;
 }
+.lh-2 {
+  line-height: 1.7rem !important;
+}
 .opaq {
   opacity: 0.6;
 }
@@ -110,4 +114,84 @@ hr.bg-blue {
   bottom: 0;
   z-index: 999;
   border-radius: 8px;
+}
+.arrows {
+  border: 1px solid var(--bg-blue);
+  color: var(--bg-blue);
+  font-size: 2rem;
+  padding: 0.5rem 0.2rem;
+  border-radius: 50%;
+}
+.dots div {
+  display: inline-block;
+  margin-right: 0.2rem;
+  width: 0.8rem;
+  height: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--bg-light);
+}
+.dots div.active {
+  width: 4px;
+  margin-right: 0.4rem;
+  border-radius: 50%;
+  background-color: var(--bg-blue);
+}
+.play-div {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.play-btn {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: var(--bg-blue);
+  top: 100;
+  left: 80;
+  cursor: pointer;
+}
+.testimony img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+}
+.testimony .message {
+  background-color: var(--bg-blue);
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  padding: 2rem 2rem;
+  line-height: 2rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+.testimony .message:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 15px solid var(--bg-blue);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  bottom: 0.9rem;
+  left: 1.6rem;
+}
+.testimony .message:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 17px solid var(--bg-blue);
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  bottom: -1rem;
+  left: 1.6rem;
 }
