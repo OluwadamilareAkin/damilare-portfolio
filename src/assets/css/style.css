@@ -41,3 +41,16 @@ a {
   color: var(--bg-blue);
   text-decoration: line-through;
 }
+.dropdown {
+  background-color: var(--bg-body) !important;
+  border-radius: 0px;
+}
+.form-control,
+.form-select {
+  background-color: inherit;
+  border: 1px solid #888;
+}
+.form-control:focus,
+.form-select:focus {
+  border: 1px solid #888;
+}
