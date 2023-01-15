@@ -54,3 +54,38 @@ a {
 .form-select:focus {
   border: 1px solid #888;
 }
+.my-btn {
+  background-color: var(--bg-blue);
+  color: #fff;
+  font-weight: 600;
+}
+.my-btn:hover {
+  background-color: var(--bg-blue);
+  color: #fff;
+  font-weight: 600;
+  opacity: 0.8;
+}
+.bordered {
+  border: 2px solid var(--bg-blue);
+  border-radius: 5px;
+}
+.bg-blue {
+  background-color: var(--bg-blue);
+}
+.text-blue {
+  color: var(--bg-blue);
+}
+.lh-3 {
+  line-height: 1.9rem;
+}
+.opaq {
+  opacity: 0.6;
+}
+.text-md {
+  font-size: 0.87rem;
+}
+hr.bg-blue {
+  background-color: blue;
+  border: none;
+  height: 2px;
+}
