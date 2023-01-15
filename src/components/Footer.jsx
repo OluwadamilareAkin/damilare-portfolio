@@ -26,7 +26,7 @@ const Footer = () => {
                 </button>
               </div>
               <div className="col-12 col-md-5">
-                <div className="bordered px-4 py-3 d-flex mb-4">
+                <div className="bordered cursor px-4 py-3 d-flex mb-4">
                   <div className="me-3">
                     <TbMail className="text-blue" size={35} />
                   </div>
@@ -38,7 +38,7 @@ const Footer = () => {
                   </div>
                 </div>
 
-                <div className="bordered px-4 py-3 d-flex">
+                <div className="bordered cursor px-4 py-3 d-flex">
                   <div className="me-3">
                     <TbPhone className="text-blue" size={35} />
                   </div>
@@ -80,9 +80,9 @@ const Footer = () => {
               </div>
               <div className="col-12 col-md-3">
                 <p className="mb-2 small">Follow Me</p>
-                <TbBrandLinkedin className="me-2" size={33} />
-                <TbBrandInstagram className="me-2" size={33} />
-                <TbBrandTwitter size={33} />
+                <TbBrandLinkedin className="me-3 cursor" size={33} />
+                <TbBrandInstagram className="me-3 cursor" size={33} />
+                <TbBrandTwitter className="cursor" size={33} />
               </div>
             </div>
           </div>

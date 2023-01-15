@@ -18,6 +18,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.cursor {
+  cursor: pointer;
+}
 .myImg {
   width: 3rem;
   height: 3rem;
@@ -88,4 +91,23 @@ hr.bg-blue {
   background-color: blue;
   border: none;
   height: 2px;
+}
+.text-underline {
+  text-decoration: underline;
+}
+.position-relative {
+  position: relative;
+}
+.my-rounded {
+  border-radius: 8px;
+}
+.hero-img {
+  width: 15rem;
+  height: 18rem;
+  object-fit: contain;
+  position: absolute;
+  right: -0.33rem;
+  bottom: 0;
+  z-index: 999;
+  border-radius: 8px;
 }
