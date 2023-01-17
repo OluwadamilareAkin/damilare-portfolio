@@ -177,7 +177,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
           {portfolio?.items?.map((item) => (
             <div key={item.sys.id}>
               <img
-                src={item.fields.displayImage.fields.file.url}
+                src={`https:${item.fields.displayImage.fields.file.url}`}
                 className="w-100"
                 alt={item.fields.title}
               />
