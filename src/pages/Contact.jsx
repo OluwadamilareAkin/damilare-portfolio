@@ -9,14 +9,18 @@ import {
 } from "react-icons/tb";
 import { Footer, Navbar } from "../components/index";
 
-const Contact = ({ language, setLanguage }) => {
+const Contact = ({ portfolio, language, setLanguage }) => {
   return (
     <>
-      <Navbar language={language} setLanguage={setLanguage} />
+      <Navbar
+        portfolio={portfolio}
+        language={language}
+        setLanguage={setLanguage}
+      />
 
       <div className="container mt-5">
-        <div className="row g-5">
-          <div className="col-12 col-md-5">
+        <div className="row g-4">
+          <div className="col-12 col-md-5 mb-5">
             <div className="px-3">
               {language === "de" ? (
                 <>
@@ -79,7 +83,7 @@ const Contact = ({ language, setLanguage }) => {
             </div>
           </div>
 
-          <div className="col-12 col-md-7">
+          <div className="col-12 col-md-7 mb-5">
             <div className="px-3">
               <form action="#">
                 <div className="form-group mb-4">

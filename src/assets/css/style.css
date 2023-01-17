@@ -35,19 +35,20 @@ a {
 .list-style-none li {
   display: inline;
   margin-right: 1.6rem;
+}
+.list-style-none li .nav-link {
   opacity: 0.7;
+  display: inline;
 }
 .list-style-none li:last-child {
   margin-right: 0rem;
 }
 .list-style-none li.active {
-  opacity: 1;
   color: var(--bg-blue);
   text-decoration: line-through;
 }
-.dropdown {
-  background-color: var(--bg-body) !important;
-  border-radius: 0px;
+.list-style-none li.active .nav-link {
+  opacity: 1;
 }
 .form-control,
 .form-select {
@@ -206,19 +207,61 @@ hr.bg-blue {
   height: 5rem;
   object-fit: cover;
 }
+.my-dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 9999;
+}
+.my-dropcontent {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 1.5rem;
+  background-color: #f1f1f1;
+  max-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.my-dropcontent.r-5 {
+  display: none;
+  position: absolute;
+  left: -2rem;
+  top: 1.58rem;
+  background-color: #f1f1f1;
+  max-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.my-dropcontent .my-dropcontent-link {
+  display: block;
+  cursor: pointer;
+  padding: 12px 16px;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+.my-dropdown:hover .my-dropcontent {
+  display: block;
+}
+.my-dropcontent .my-dropcontent-link:hover {
+  background-color: #ddd;
+}
 @media screen and (max-width: 767px) {
+  .hero-img {
+    display: none;
+  }
+
   .sidebar {
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #fff;
     width: 100%;
-    color: white;
+    color: #000;
     height: 100%;
     top: -0.5rem;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 9999999;
-    text-align: center;
     font-weight: 600;
     display: none;
   }
@@ -230,8 +273,9 @@ hr.bg-blue {
     display: block;
     margin-right: 0rem !important;
     opacity: 0.8;
-    font-size: 1.5rem;
-    margin-bottom: 2.4rem;
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+    margin-bottom: 2.7rem;
   }
   div.close {
     position: absolute;

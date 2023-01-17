@@ -8,14 +8,18 @@ import {
 import { Footer, Navbar } from "../components/index";
 
 import myImage from "../assets/images/user.png";
-import Ibook from "../assets/images/Ibook.png";
 import userMain from "../assets/images/user-main.jpeg";
 import testimonial from "../assets/images/testimonial-1.jpeg";
 
-const Home = ({ language, setLanguage }) => {
+const Home = ({ portfolio, language, setLanguage }) => {
   return (
     <>
-      <Navbar language={language} setLanguage={setLanguage} />
+      <Navbar
+        portfolio={portfolio}
+        language={language}
+        setLanguage={setLanguage}
+      />
+
       <div className="mt-4 mb-5">
         <div className="container">
           <div className="row">
@@ -169,7 +173,19 @@ const Home = ({ language, setLanguage }) => {
             </div>
           </div>
         </div>
-        <img src={Ibook} className="w-100" alt="Ibook" />
+        <div className="carouselImages">
+          {portfolio?.items?.map((item) => (
+            <>
+              <div key={item.sys.id}>
+                <img
+                  src={item.fields.displayImage.fields.file.url}
+                  className="w-100"
+                  alt={item.fields.title}
+                />
+              </div>
+            </>
+          ))}
+        </div>
         <div className="dots text-center mt-4 mb-3">
           <div className="active"></div>
           <div></div>

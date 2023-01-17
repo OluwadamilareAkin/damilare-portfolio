@@ -1,14 +1,37 @@
 import React, { useState, useEffect } from "react";
+import { createClient } from "contentful";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle";
-
 import "./assets/css/style.css";
 
 import { About, Contact, Home, NotFound, Projects } from "./pages/index";
 
 const App = () => {
+  const [portfolio, setPortfolio] = useState([]);
+
+  const client = createClient({
+    space: "jo2fczow80gl",
+    accessToken: "mg_6N-Aic7XDYQH0n-CAlB9qkm8E8Udr0wnIYmdMd8M",
+  });
+
+  //getting all portfolio
+  useEffect(() => {
+    const getAllPortfolio = async () => {
+      try {
+        await client.getEntries().then((entries) => {
+          setPortfolio(entries);
+        });
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    getAllPortfolio();
+  }, []);
+
+  //language
   const [language, setLanguage] = useState([]);
 
   useEffect(() => {
@@ -27,25 +50,65 @@ const App = () => {
           <Route
             exact
             path="/"
-            element={<Home language={language} setLanguage={setLanguage} />}
+            element={
+              <Home
+                portfolio={portfolio}
+                language={language}
+                setLanguage={setLanguage}
+              />
+            }
           />
           <Route
             exact
             path="/about"
-            element={<About language={language} setLanguage={setLanguage} />}
+            element={
+              <About
+                portfolio={portfolio}
+                language={language}
+                setLanguage={setLanguage}
+              />
+            }
           />
           <Route
             exact
             path="/contact"
-            element={<Contact language={language} setLanguage={setLanguage} />}
+            element={
+              <Contact
+                portfolio={portfolio}
+                language={language}
+                setLanguage={setLanguage}
+              />
+            }
+          />
+          <Route
+            path="/project/:id"
+            element={
+              <Projects
+                portfolio={portfolio}
+                language={language}
+                setLanguage={setLanguage}
+              />
+            }
           />
           <Route
             path="/project"
-            element={<Projects language={language} setLanguage={setLanguage} />}
+            element={
+              <Projects
+                portfolio={portfolio}
+                language={language}
+                setLanguage={setLanguage}
+              />
+            }
           />
           <Route
             path="*"
-            element={<NotFound language={language} setLanguage={setLanguage} />}
+            element={
+              <NotFound
+                portfolio={portfolio}
+                language={language}
+                setLanguage={setLanguage}
+              />
+            }
           />
         </Routes>
       </Router>

@@ -2,10 +2,14 @@ import React from "react";
 
 import { Footer, Navbar } from "../components/index";
 
-const Home = ({ language, setLanguage }) => {
+const Home = ({ portfolio, language, setLanguage }) => {
   return (
     <>
-      <Navbar language={language} setLanguage={setLanguage} />
+      <Navbar
+        portfolio={portfolio}
+        language={language}
+        setLanguage={setLanguage}
+      />
 
       <div className="container mt-5">
         <div className="row">

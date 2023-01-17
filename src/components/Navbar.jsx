@@ -1,33 +1,39 @@
 import React, { useState } from "react";
-import profileImage from "../assets/images/profileImage.png";
-import { TbMenu2, TbX } from "react-icons/tb";
-
 import { Link, useLocation } from "react-router-dom";
 
-const Navbar = ({ language, setLanguage }) => {
+import profileImage from "../assets/images/profileImage.png";
+import { TbMenu2, TbWorld, TbX } from "react-icons/tb";
+
+const Navbar = ({ portfolio, language, setLanguage, id }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const location = useLocation().pathname;
 
-  const changeLanguage = (e) => {
-    let lang = e.target.value;
+  const changeLanguage = (lang) => {
     setLanguage(lang);
     localStorage.setItem("language", lang);
   };
 
   return (
     <>
-      <nav className="py-4 px-3">
+      <nav className="py-4 px-3 mt-4">
         <div className="container">
           <div className="row align-items-center">
             <div className="d-flex justify-content-between">
-              <div className="">
+              <div className="d-flex align-items-center">
+                <TbMenu2
+                  onClick={() => {
+                    setIsOpen(!isOpen);
+                  }}
+                  className="d-block d-md-none me-3"
+                  size={20}
+                />
                 <img
-                  className="myImg"
+                  className="myImg d-none d-lg-inline-block"
                   src={profileImage}
                   alt="Oluwadamilare Vincent Akinyoyenu"
                 />
-                <span className="fw-bold d-none d-lg-inline-block">
+                <span className="fw-bold">
                   Oluwadamilare Vincent Akinyoyenu
                 </span>
               </div>
@@ -44,35 +50,57 @@ const Navbar = ({ language, setLanguage }) => {
                   <ul className="list-style-none">
                     {location === "/" ? (
                       <li className="active">
-                        <Link to="/">Home</Link>
+                        <Link className="nav-link" to="/">
+                          Home
+                        </Link>
                       </li>
                     ) : (
                       <li>
-                        <Link to="/">Home</Link>
+                        <Link className="nav-link" to="/">
+                          Home
+                        </Link>
                       </li>
                     )}
 
                     {location === "/about" ? (
                       <li className="active">
-                        <Link to="/about">Über</Link>
+                        <Link className="nav-link" to="/about">
+                          Über
+                        </Link>
                       </li>
                     ) : (
                       <li>
-                        <Link to="/about">Über</Link>
+                        <Link className="nav-link" to="/about">
+                          Über
+                        </Link>
                       </li>
                     )}
 
-                    <li>
-                      <Link to="#">Projekte</Link>
-                    </li>
-
-                    {location === "/contact" ? (
+                    {location === "/project" ? (
                       <li className="active">
-                        <Link to="/contact">Kontakt</Link>
+                        <Link className="nav-link" to="/project">
+                          Projekte
+                        </Link>
                       </li>
                     ) : (
                       <li>
-                        <Link to="/contact">Kontakt</Link>
+                        <Link className="nav-link" to="/project">
+                          Projekte
+                        </Link>
+                      </li>
+                    )}
+
+                    {location === "/contact" ? (
+                      <li className="active">
+                        <Link className="nav-link" to="/contact">
+                          Kontakt
+                        </Link>
+                      </li>
+                    ) : (
+                      <li>
+                        <Link className="nav-link" to="/contact">
+                          Kontakt
+                        </Link>
                       </li>
                     )}
                   </ul>
@@ -80,35 +108,77 @@ const Navbar = ({ language, setLanguage }) => {
                   <ul className="list-style-none">
                     {location === "/" ? (
                       <li className="active">
-                        <Link to="/">Home</Link>
+                        <Link className="nav-link" to="/">
+                          Home
+                        </Link>
                       </li>
                     ) : (
                       <li>
-                        <Link to="/">Home</Link>
+                        <Link className="nav-link" to="/">
+                          Home
+                        </Link>
                       </li>
                     )}
 
                     {location === "/about" ? (
                       <li className="active">
-                        <Link to="/about">About me</Link>
+                        <Link className="nav-link" to="/about">
+                          About me
+                        </Link>
                       </li>
                     ) : (
                       <li>
-                        <Link to="/about">About me</Link>
+                        <Link className="nav-link" to="/about">
+                          About me
+                        </Link>
                       </li>
                     )}
 
-                    <li>
-                      <Link to="#">Projects</Link>
-                    </li>
+                    {location === "/project/" + id ? (
+                      <li className="active my-dropdown">
+                        <Link className="nav-link" to="#">
+                          <span className="my-dropbtn">Project</span>
+                        </Link>
+                        <div className="my-dropcontent">
+                          {portfolio?.items?.map((slug) => (
+                            <Link
+                              className="my-dropcontent-link"
+                              to={`/project/${slug.sys.id}`}
+                            >
+                              {slug.fields.slug}
+                            </Link>
+                          ))}
+                        </div>
+                      </li>
+                    ) : (
+                      <li className="my-dropdown">
+                        <Link className="nav-link" to="#">
+                          <span className="my-dropbtn">Project</span>
+                        </Link>
+                        <div className="my-dropcontent">
+                          {portfolio?.items?.map((slug) => (
+                            <Link
+                              className="my-dropcontent-link"
+                              to={`/project/${slug.sys.id}`}
+                            >
+                              {slug.fields.slug}
+                            </Link>
+                          ))}
+                        </div>
+                      </li>
+                    )}
 
                     {location === "/contact" ? (
                       <li className="active">
-                        <Link to="/contact">Contact</Link>
+                        <Link className="nav-link" to="/contact">
+                          Contact
+                        </Link>
                       </li>
                     ) : (
                       <li>
-                        <Link to="/contact">Contact</Link>
+                        <Link className="nav-link" to="/contact">
+                          Contact
+                        </Link>
                       </li>
                     )}
                   </ul>
@@ -116,21 +186,30 @@ const Navbar = ({ language, setLanguage }) => {
               </div>
 
               <div>
-                <div className="d-flex align-items-center mt-2">
-                  <select
-                    onChange={changeLanguage}
-                    className="form-select cursor shadow-none bg-inherit me-3 me-md-0 py-1"
-                  >
-                    <option value="en">EN</option>
-                    <option value="de">DE</option>
-                  </select>
-                  <TbMenu2
-                    onClick={() => {
-                      setIsOpen(!isOpen);
-                    }}
-                    className="d-block d-md-none"
-                    size={30}
-                  />
+                <div className="d-flex align-items-center mt-1 mt-md-2 pt-1">
+                  <li className="my-dropdown">
+                    <Link className="nav-link" to="#">
+                      <TbWorld size={20} />
+                    </Link>
+                    <div className="my-dropcontent r-5">
+                      <span
+                        onClick={() => {
+                          changeLanguage("en");
+                        }}
+                        className="my-dropcontent-link"
+                      >
+                        EN
+                      </span>
+                      <span
+                        onClick={() => {
+                          changeLanguage("ge");
+                        }}
+                        className="my-dropcontent-link"
+                      >
+                        GE
+                      </span>
+                    </div>
+                  </li>
                 </div>
               </div>
             </div>
