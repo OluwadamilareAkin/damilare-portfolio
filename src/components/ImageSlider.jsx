@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { TbArrowNarrowLeft, TbArrowNarrowRight } from "react-icons/tb";
 
-const ImageSlider = ({image}) => {
+const ImageSlider = ({ image, language }) => {
     const SliderProperty = {
       ImageSrc: ""
     };
@@ -58,7 +58,7 @@ const ImageSlider = ({image}) => {
             <div className="d-flex align-items-center justify-content-between px-3 mb-4">
               <div>
                 <h4 className="fw-bold">
-                  {props.language === "de" ? "Projekte" : "Projects"}
+                  {language === "de" ? "Projekte" : "Projects"}
                 </h4>
               </div>
               <div>
