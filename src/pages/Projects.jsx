@@ -5,10 +5,10 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import { Footer, Navbar } from "../components/index";
 
-const Projects = ({ language, setLanguage }) => {
+const Projects = ({ portfolio, language, setLanguage }) => {
   const { id } = useParams();
 
-  const [portfolio, setPortfolio] = useState([]);
+  const [lPortfolio, setLPortfolio] = useState([]);
 
   const client = createClient({
     space: "jo2fczow80gl",
@@ -20,7 +20,7 @@ const Projects = ({ language, setLanguage }) => {
     const getPortfolio = async () => {
       try {
         await client.getEntry(id).then((entries) => {
-          setPortfolio(entries);
+          setLPortfolio(entries);
         });
       } catch (error) {
         console.log(error);
@@ -32,23 +32,28 @@ const Projects = ({ language, setLanguage }) => {
 
   return (
     <>
-      <Navbar id={id} language={language} setLanguage={setLanguage} />
+      <Navbar
+        id={id}
+        portfolio={portfolio}
+        language={language}
+        setLanguage={setLanguage}
+      />
 
       <div className="container my-5">
         <div className="row">
           <div className="col-12">
             <div className="px-3">
-              <p>{portfolio?.fields?.title}</p>
-              <p>Role: {portfolio?.fields?.role}</p>
-              <p>Context: {portfolio?.fields?.context}</p>
-              <p>Duration: {portfolio?.fields?.duration}</p>
+              <p>{lPortfolio?.fields?.title}</p>
+              <p>Role: {lPortfolio?.fields?.role}</p>
+              <p>Context: {lPortfolio?.fields?.context}</p>
+              <p>Duration: {lPortfolio?.fields?.duration}</p>
               <img
-                key={portfolio?.sys?.id}
-                src={portfolio?.fields?.displayImage?.fields?.file?.url}
+                key={lPortfolio?.sys?.id}
+                src={lPortfolio?.fields?.displayImage?.fields?.file?.url}
                 className="w-100 mt-3 mb-4"
-                alt={portfolio?.fields?.title}
+                alt={lPortfolio?.fields?.title}
               />
-              {documentToReactComponents(portfolio?.fields?.body)}
+              {documentToReactComponents(lPortfolio?.fields?.body)}
             </div>
           </div>
         </div>

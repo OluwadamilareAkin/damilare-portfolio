@@ -43,12 +43,10 @@ a {
 .list-style-none li:last-child {
   margin-right: 0rem;
 }
-.list-style-none li.active {
-  color: var(--bg-blue);
-  text-decoration: line-through;
-}
 .list-style-none li.active .nav-link {
   opacity: 1;
+  color: var(--bg-blue);
+  text-decoration: line-through;
 }
 .form-control,
 .form-select {
