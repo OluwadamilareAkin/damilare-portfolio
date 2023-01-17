@@ -66,8 +66,8 @@ const ImageSlider = (props) => {
                 </h4>
               </div>
               <div>
-                <TbArrowNarrowLeft onClick={preClick} className="arrows cursor me-3" />
-                <TbArrowNarrowRight onClick={nextClick} className="arrows cursor" />
+                <TbArrowNarrowLeft onClick={PreClick} className="arrows cursor me-3" />
+                <TbArrowNarrowRight onClick={NextClick} className="arrows cursor" />
               </div>
             </div>
           </div>
