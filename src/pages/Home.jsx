@@ -157,7 +157,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
 
       {portfolio?.items?.map((item) => (
         <ImageSlider
-          ImageData={`https:${item.fields.displayImage.fields.file.url}`}
+          image={`https:${item.fields.displayImage.fields.file.url}`}
           language={language}
         />
       ))}
