@@ -76,17 +76,37 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
                       </li>
                     )}
 
-                    {location === "/project" ? (
-                      <li className="active">
-                        <Link className="nav-link" to="/project">
-                          Projekte
+                    {location === "/project/" + id ? (
+                      <li className="active my-dropdown">
+                        <Link className="nav-link" to="#">
+                          <span className="my-dropbtn">Projekte</span>
                         </Link>
+                        <div className="my-dropcontent">
+                          {portfolio?.items?.map((slug) => (
+                            <Link
+                              className="my-dropcontent-link"
+                              to={`/project/${slug.sys.id}`}
+                            >
+                              {slug.fields.slug}
+                            </Link>
+                          ))}
+                        </div>
                       </li>
                     ) : (
-                      <li>
-                        <Link className="nav-link" to="/project">
-                          Projekte
+                      <li className="my-dropdown">
+                        <Link className="nav-link" to="#">
+                          <span className="my-dropbtn">Projekte</span>
                         </Link>
+                        <div className="my-dropcontent">
+                          {portfolio?.items?.map((slug) => (
+                            <Link
+                              className="my-dropcontent-link"
+                              to={`/project/${slug.sys.id}`}
+                            >
+                              {slug.fields.slug}
+                            </Link>
+                          ))}
+                        </div>
                       </li>
                     )}
 
@@ -202,7 +222,7 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
                       </span>
                       <span
                         onClick={() => {
-                          changeLanguage("ge");
+                          changeLanguage("de");
                         }}
                         className="my-dropcontent-link"
                       >
