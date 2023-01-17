@@ -1,11 +1,7 @@
 import React from "react";
 
-import {
-  TbArrowNarrowLeft,
-  TbArrowNarrowRight,
-  TbPlayerPlay,
-} from "react-icons/tb";
-import { Footer, Navbar } from "../components/index";
+import { TbPlayerPlay } from "react-icons/tb";
+import { Footer, Navbar, ImageSlider } from "../components/index";
 
 import myImage from "../assets/images/user.png";
 import userMain from "../assets/images/user-main.jpeg";
@@ -159,38 +155,12 @@ const Home = ({ portfolio, language, setLanguage }) => {
         </div>
       </div>
 
-      <div className="bg-white py-4">
-        <div className="container">
-          <div className="d-flex align-items-center justify-content-between px-3 mb-4">
-            <div>
-              <h4 className="fw-bold">
-                {language === "de" ? "Projekte" : "Projects"}
-              </h4>
-            </div>
-            <div>
-              <TbArrowNarrowLeft className="arrows cursor me-3" />
-              <TbArrowNarrowRight className="arrows cursor" />
-            </div>
-          </div>
-        </div>
-        <div className="carouselImages">
-          {portfolio?.items?.map((item) => (
-            <div key={item.sys.id}>
-              <img
-                src={`https:${item.fields.displayImage.fields.file.url}`}
-                className="w-100"
-                alt={item.fields.title}
-              />
-            </div>
-          ))}
-        </div>
-        <div className="dots text-center mt-4 mb-3">
-          <div className="active"></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
+      {portfolio?.items?.map((item) => (
+        <ImageSlider
+          ImageData={`https:${item.fields.displayImage.fields.file.url}`}
+          language={language}
+        />
+      ))}
 
       <div className="container my-5 pt-4">
         <div className="row">

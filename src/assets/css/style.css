@@ -245,10 +245,6 @@ hr.bg-blue {
   background-color: #ddd;
 }
 @media screen and (max-width: 767px) {
-  .hero-img {
-    display: none;
-  }
-
   .sidebar {
     position: fixed;
     background-color: #fff;

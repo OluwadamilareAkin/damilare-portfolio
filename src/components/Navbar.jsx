@@ -225,7 +225,6 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
                   <li className="my-dropdown">
                     <Link className="nav-link" to="#">
                       <TbWorld size={20} />
-                      <TbCaretDown />
                     </Link>
                     <div className="my-dropcontent r-5">
                       <span
