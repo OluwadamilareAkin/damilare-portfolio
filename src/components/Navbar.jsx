@@ -26,7 +26,7 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
                   onClick={() => {
                     setIsOpen(!isOpen);
                   }}
-                  className="d-block d-md-none me-2"
+                  className="d-block d-md-none me-3"
                   size={20}
                 />
                 <img
