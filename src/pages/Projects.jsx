@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { createClient } from "contentful";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import ReactMarkdown from "react-markdown";
 
 import { Footer, Navbar } from "../components/index";
 
@@ -55,7 +55,9 @@ const Projects = ({ portfolio, language, setLanguage }) => {
                     className="w-100 mt-3 mb-4"
                     alt={lPortfolio?.fields?.title}
                   />
-                  {documentToReactComponents(lPortfolio?.fields?.body)}
+                  <ReactMarkdown>
+                    {lPortfolio?.fields?.mainBody}
+                  </ReactMarkdown>
                 </div>
               </div>
             </div>
