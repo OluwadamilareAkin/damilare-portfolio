@@ -28,7 +28,7 @@ const Projects = ({ language, setLanguage }) => {
     };
 
     getPortfolio();
-  }, []);
+  }, [id, client]);
 
   return (
     <>
