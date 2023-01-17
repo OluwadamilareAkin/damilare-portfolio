@@ -49,7 +49,7 @@ const ImageSlider = ({ image, language }) => {
         ...previous,
         ImageSrc: image[count].ImageSrc,
       }));
-    }, [count]);
+    }, [count,image]);
 
     return (
       <>
