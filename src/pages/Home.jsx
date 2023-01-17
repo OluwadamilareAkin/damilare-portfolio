@@ -175,15 +175,13 @@ const Home = ({ portfolio, language, setLanguage }) => {
         </div>
         <div className="carouselImages">
           {portfolio?.items?.map((item) => (
-            <>
-              <div key={item.sys.id}>
-                <img
-                  src={item.fields.displayImage.fields.file.url}
-                  className="w-100"
-                  alt={item.fields.title}
-                />
-              </div>
-            </>
+            <div key={item.sys.id}>
+              <img
+                src={item.fields.displayImage.fields.file.url}
+                className="w-100"
+                alt={item.fields.title}
+              />
+            </div>
           ))}
         </div>
         <div className="dots text-center mt-4 mb-3">
