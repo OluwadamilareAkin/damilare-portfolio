@@ -84,7 +84,7 @@ const ImageSlider = (props) => {
   //     </>
   //   );
 
-  return <>Hello</>;
+  return <></>;
 };
 
 export default ImageSlider;

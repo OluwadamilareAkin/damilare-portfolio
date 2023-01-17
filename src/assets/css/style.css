@@ -288,7 +288,7 @@ hr.bg-blue {
   .my-dropdown.lr .my-dropcontent {
     position: relative;
     padding-top: 0.3rem;
-    display: block;
+    display: none;
     background-color: inherit;
     max-width: 100%;
     font-size: 1.1rem;
