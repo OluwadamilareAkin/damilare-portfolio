@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { TbArrowNarrowLeft, TbArrowNarrowRight } from "react-icons/tb";
 
-const ImageSlider = (props) => {
+const ImageSlider = ({image}) => {
     const SliderProperty = {
-      ImageNo: "",
-      ImageName: "",
-      ImageSrc: "",
+      ImageSrc: ""
     };
 
     const [sliderProperty, setSliderProperty] = useState(SliderProperty);
 
-    const { ImageNo, ImageName, ImageSrc } = sliderProperty;
+    const { ImageSrc } = sliderProperty;
 
     const [count, setCount] = useState(0);
 
@@ -18,7 +16,7 @@ const ImageSlider = (props) => {
 
     const PreClick = () => {
       setAnimationCls(() => "displayNone fade");
-      const myTimeout = setTimeout(() => {
+      setTimeout(() => {
         setAnimationCls("displayBlock fade");
       }, 100);
 
@@ -27,21 +25,21 @@ const ImageSlider = (props) => {
       }
 
       if (count === 0) {
-        setCount(props.ImageData.length - 1);
+        setCount(image.length - 1);
       }
     };
 
     const NextClick = () => {
       setAnimationCls(() => "displayNone fade");
-      const myTimeout = setTimeout(() => {
+      setTimeout(() => {
         setAnimationCls("displayBlock fade");
       }, 100);
 
-      if (count <= props.ImageData.length - 2) {
+      if (count <= image.length - 2) {
         setCount((preCount) => preCount + 1);
       }
 
-      if (count === props.ImageData.length - 1) {
+      if (count === image.length - 1) {
         setCount(0);
       }
     };
@@ -49,9 +47,7 @@ const ImageSlider = (props) => {
     useEffect(() => {
       setSliderProperty((previous) => ({
         ...previous,
-        ImageNo: props.ImageData[count].ImageNo,
-        ImageName: props.ImageData[count].ImageName,
-        ImageSrc: props.ImageData[count].ImageSrc,
+        ImageSrc: image[count].ImageSrc,
       }));
     }, [count]);
 
@@ -72,7 +68,7 @@ const ImageSlider = (props) => {
             </div>
           </div>
           <div className={`carouselImages ${animationCls}`}>
-            <img src={ImageSrc} alt="portfolio" />
+            <img src={`https://${ImageSrc}`} alt="portfolio" />
           </div>
           <div className="dots text-center mt-4 mb-3">
             <div className="active"></div>
