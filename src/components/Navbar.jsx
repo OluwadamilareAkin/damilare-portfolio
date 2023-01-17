@@ -9,7 +9,8 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
 
   const location = useLocation().pathname;
 
-  const changeLanguage = (lang) => {
+  const changeLanguage = (e) => {
+    const lang = e.target.value;
     setLanguage(lang);
     localStorage.setItem("language", lang);
   };
@@ -222,29 +223,10 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
 
               <div>
                 <div className="d-flex align-items-center mt-0 mt-md-2 pt-1">
-                  <li className="my-dropdown">
-                    <Link className="nav-link" to="#">
-                      <TbWorld size={20} />
-                    </Link>
-                    <div className="my-dropcontent r-5">
-                      <span
-                        onClick={() => {
-                          changeLanguage("en");
-                        }}
-                        className="my-dropcontent-link"
-                      >
-                        EN
-                      </span>
-                      <span
-                        onClick={() => {
-                          changeLanguage("de");
-                        }}
-                        className="my-dropcontent-link"
-                      >
-                        GE
-                      </span>
-                    </div>
-                  </li>
+                  <select onChange={changeLanguage} value={language} class="form-select">
+                    <option value="en">EN</option>
+                    <option value="de">DE</option>
+                  </select>
                 </div>
               </div>
             </div>
