@@ -32,32 +32,36 @@ const Projects = ({ portfolio, language, setLanguage }) => {
 
   return (
     <>
-      <Navbar
-        id={id}
-        portfolio={portfolio}
-        language={language}
-        setLanguage={setLanguage}
-      />
+      {lPortfolio && (
+        <>
+          <Navbar
+            id={id}
+            portfolio={portfolio}
+            language={language}
+            setLanguage={setLanguage}
+          />
 
-      <div className="container my-5">
-        <div className="row">
-          <div className="col-12">
-            <div className="px-3">
-              <p>{lPortfolio?.fields?.title}</p>
-              <p>Role: {lPortfolio?.fields?.role}</p>
-              <p>Context: {lPortfolio?.fields?.context}</p>
-              <p>Duration: {lPortfolio?.fields?.duration}</p>
-              <img
-                key={lPortfolio?.sys?.id}
-                src={lPortfolio?.fields?.displayImage?.fields?.file?.url}
-                className="w-100 mt-3 mb-4"
-                alt={lPortfolio?.fields?.title}
-              />
-              {documentToReactComponents(lPortfolio?.fields?.body)}
+          <div className="container my-5">
+            <div className="row">
+              <div className="col-12">
+                <div className="px-3">
+                  <p>{lPortfolio?.fields?.title}</p>
+                  <p>Role: {lPortfolio?.fields?.role}</p>
+                  <p>Context: {lPortfolio?.fields?.context}</p>
+                  <p>Duration: {lPortfolio?.fields?.duration}</p>
+                  <img
+                    key={lPortfolio?.sys?.id}
+                    src={lPortfolio?.fields?.displayImage?.fields?.file?.url}
+                    className="w-100 mt-3 mb-4"
+                    alt={lPortfolio?.fields?.title}
+                  />
+                  {documentToReactComponents(lPortfolio?.fields?.body)}
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        </>
+      )}
       <Footer language={language} setLanguage={setLanguage} />
     </>
   );

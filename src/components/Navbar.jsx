@@ -84,6 +84,7 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
                         <div className="my-dropcontent">
                           {portfolio?.items?.map((slug) => (
                             <Link
+                              key={slug.sys.id}
                               className="my-dropcontent-link"
                               to={`/project/${slug.sys.id}`}
                             >
@@ -100,6 +101,7 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
                         <div className="my-dropcontent">
                           {portfolio?.items?.map((slug) => (
                             <Link
+                              key={slug.sys.id}
                               className="my-dropcontent-link"
                               to={`/project/${slug.sys.id}`}
                             >
@@ -162,6 +164,7 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
                         <div className="my-dropcontent">
                           {portfolio?.items?.map((slug) => (
                             <Link
+                              key={slug.sys.id}
                               className="my-dropcontent-link"
                               to={`/project/${slug.sys.id}`}
                             >
@@ -178,6 +181,7 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
                         <div className="my-dropcontent">
                           {portfolio?.items?.map((slug) => (
                             <Link
+                              key={slug.sys.id}
                               className="my-dropcontent-link"
                               to={`/project/${slug.sys.id}`}
                             >
