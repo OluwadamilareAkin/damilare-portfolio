@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import profileImage from "../assets/images/profileImage.png";
-import { TbCaretDown, TbMenu2, TbWorld, TbX } from "react-icons/tb";
+import { TbCaretDown, TbMenu2, TbX } from "react-icons/tb";
 
 const Navbar = ({ portfolio, language, setLanguage, id }) => {
   const [isOpen, setIsOpen] = useState(false);
