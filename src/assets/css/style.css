@@ -285,4 +285,33 @@ hr.bg-blue {
   .sidebar.true {
     display: block !important;
   }
+
+  .my-dropdown.lr {
+    display: block;
+  }
+  .my-dropdown.lr .my-dropcontent {
+    position: relative;
+    padding-top: 0.3rem;
+    display: block;
+    background-color: inherit;
+    max-width: 100%;
+    font-size: 1.1rem;
+    box-shadow: none;
+  }
+  .my-dropdown.lr .my-dropcontent .my-dropcontent-link {
+    display: block;
+    cursor: pointer;
+    padding: 12px 16px;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+  }
+  .my-dropdown.lr .my-dropdown:hover .my-dropcontent {
+    display: block;
+  }
+  .my-dropdown.lr .my-dropcontent .my-dropcontent-link:hover {
+    background-color: inherit;
+  }
 }

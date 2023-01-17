@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import profileImage from "../assets/images/profileImage.png";
-import { TbMenu2, TbWorld, TbX } from "react-icons/tb";
+import { TbCaretDown, TbMenu2, TbWorld, TbX } from "react-icons/tb";
 
 const Navbar = ({ portfolio, language, setLanguage, id }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -77,9 +77,12 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
                     )}
 
                     {location === "/project/" + id ? (
-                      <li className="active my-dropdown">
+                      <li className="active my-dropdown lr">
                         <Link className="nav-link" to="#">
-                          <span className="my-dropbtn">Projekte</span>
+                          <span className="my-dropbtn">
+                            Projekte
+                            <TbCaretDown />
+                          </span>
                         </Link>
                         <div className="my-dropcontent">
                           {portfolio?.items?.map((slug) => (
@@ -94,9 +97,12 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
                         </div>
                       </li>
                     ) : (
-                      <li className="my-dropdown">
+                      <li className="my-dropdown lr">
                         <Link className="nav-link" to="#">
-                          <span className="my-dropbtn">Projekte</span>
+                          <span className="my-dropbtn">
+                            Projekte
+                            <TbCaretDown />
+                          </span>
                         </Link>
                         <div className="my-dropcontent">
                           {portfolio?.items?.map((slug) => (
@@ -157,9 +163,12 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
                     )}
 
                     {location === "/project/" + id ? (
-                      <li className="active my-dropdown">
+                      <li className="active my-dropdown lr">
                         <Link className="nav-link" to="#">
-                          <span className="my-dropbtn">Project</span>
+                          <span className="my-dropbtn">
+                            Project
+                            <TbCaretDown />
+                          </span>
                         </Link>
                         <div className="my-dropcontent">
                           {portfolio?.items?.map((slug) => (
@@ -174,9 +183,11 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
                         </div>
                       </li>
                     ) : (
-                      <li className="my-dropdown">
+                      <li className="my-dropdown lr">
                         <Link className="nav-link" to="#">
-                          <span className="my-dropbtn">Project</span>
+                          <span className="my-dropbtn">
+                            Project <TbCaretDown />
+                          </span>
                         </Link>
                         <div className="my-dropcontent">
                           {portfolio?.items?.map((slug) => (
@@ -210,10 +221,11 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
               </div>
 
               <div>
-                <div className="d-flex align-items-center mt-1 mt-md-2 pt-1">
+                <div className="d-flex align-items-center mt-0 mt-md-2 pt-1">
                   <li className="my-dropdown">
                     <Link className="nav-link" to="#">
                       <TbWorld size={20} />
+                      <TbCaretDown />
                     </Link>
                     <div className="my-dropcontent r-5">
                       <span
