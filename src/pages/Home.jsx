@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { TbPlayerPlay } from "react-icons/tb";
 import { Footer, Navbar, ImageSlider } from "../components/index";
@@ -8,6 +8,17 @@ import userMain from "../assets/images/user-main.jpeg";
 import testimonial from "../assets/images/testimonial-1.jpeg";
 
 const Home = ({ portfolio, language, setLanguage }) => {
+  const [theArray, setTheArray] = useState([]);
+
+  useEffect(() => {
+    portfolio?.items?.map((item) =>
+      setTheArray((theArray) => [
+        ...theArray,
+        item.fields.displayImage.fields.file.url,
+      ])
+    );
+  }, [portfolio]);
+
   return (
     <>
       <Navbar
@@ -155,12 +166,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
         </div>
       </div>
 
-      {portfolio?.items?.map((item) => (
-        <ImageSlider
-          image={`https:${item.fields.displayImage.fields.file.url}`}
-          language={language}
-        />
-      ))}
+      <ImageSlider image={theArray} language={language} />
 
       <div className="container my-5 pt-4">
         <div className="row">
