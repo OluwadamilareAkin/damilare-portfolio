@@ -6,17 +6,17 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { Footer, Navbar } from "../components/index";
 
 const Projects = ({ portfolio, language, setLanguage }) => {
-  const { id } = useParams();
-
   const [lPortfolio, setLPortfolio] = useState([]);
 
-  const client = createClient({
-    space: "jo2fczow80gl",
-    accessToken: "mg_6N-Aic7XDYQH0n-CAlB9qkm8E8Udr0wnIYmdMd8M",
-  });
+  const { id } = useParams();
 
   //getting all portfolio
   useEffect(() => {
+    const client = createClient({
+      space: "jo2fczow80gl",
+      accessToken: "mg_6N-Aic7XDYQH0n-CAlB9qkm8E8Udr0wnIYmdMd8M",
+    });
+
     const getPortfolio = async () => {
       try {
         await client.getEntry(id).then((entries) => {
@@ -28,7 +28,7 @@ const Projects = ({ portfolio, language, setLanguage }) => {
     };
 
     getPortfolio();
-  }, [id, client]);
+  }, [id]);
 
   return (
     <>
