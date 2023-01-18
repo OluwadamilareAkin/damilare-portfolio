@@ -52,10 +52,10 @@ const Projects = ({ portfolio, language, setLanguage }) => {
                   <img
                     key={lPortfolio?.sys?.id}
                     src={`https:${lPortfolio?.fields?.displayImage?.fields?.file?.url}`}
-                    className="w-100 mt-3 mb-4"
+                    className="w-100 mx-auto d-block mt-4 mb-5"
                     alt={lPortfolio?.fields?.title}
                   />
-                  <ReactMarkdown>
+                  <ReactMarkdown className="markdown">
                     {lPortfolio?.fields?.mainBody}
                   </ReactMarkdown>
                 </div>
