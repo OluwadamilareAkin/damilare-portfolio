@@ -8,16 +8,35 @@ import userMain from "../assets/images/user-main.jpeg";
 import testimonial from "../assets/images/testimonial-1.jpeg";
 
 const Home = ({ portfolio, language, setLanguage }) => {
-  const [theArray, setTheArray] = useState([]);
+  const [image, setImage] = useState([]);
+  const [title, setTitle] = useState([]);
+  const [id, setId] = useState([]);
+  const [count, setCount] = useState(0);
 
+  let port = portfolio?.items;
   useEffect(() => {
-    portfolio?.items?.map((item) =>
-      setTheArray((theArray) => [
-        ...theArray,
-        item.fields.displayImage.fields.file.url,
-      ])
+    setCount(port?.length);
+
+    port?.map((item) =>
+      setImage((image) => [...image, item.fields.displayImage.fields.file.url])
     );
-  }, [portfolio]);
+
+    port?.map((item) => setTitle((title) => [...title, item.fields.title]));
+
+    port?.map((item) => setId((id) => [...id, item.sys.id]));
+  }, [port]);
+
+  const downloadResume = () => {
+    fetch(window.location.origin + "/resume.pdf").then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "Vincent_Akinyoyenu_Resume.pdf";
+        alink.click();
+      });
+    });
+  };
 
   return (
     <>
@@ -31,7 +50,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <div className="bg-blue position-relative text-white my-rounded p-4">
+              <div className="bg-blue wave-bg position-relative text-white my-rounded p-4">
                 <img
                   className="hero-img"
                   src={myImage}
@@ -53,7 +72,10 @@ const Home = ({ portfolio, language, setLanguage }) => {
                         <br />
                         Web- und Anwendungsdesign und visuelle Entwicklung.
                       </p>
-                      <span className="text-underline text-md cursor">
+                      <span
+                        onClick={downloadResume}
+                        className="text-underline text-md cursor"
+                      >
                         Lebenslauf Herunterladen
                       </span>
                     </>
@@ -71,7 +93,10 @@ const Home = ({ portfolio, language, setLanguage }) => {
                         <br />
                         web and application design and visual development
                       </p>
-                      <span className="text-underline text-md cursor">
+                      <span
+                        onClick={downloadResume}
+                        className="text-underline text-md cursor"
+                      >
                         Download Resume
                       </span>
                     </>
@@ -166,7 +191,13 @@ const Home = ({ portfolio, language, setLanguage }) => {
         </div>
       </div>
 
-      <ImageSlider image={theArray} language={language} />
+      <ImageSlider
+        image={image}
+        count={count}
+        id={id}
+        title={title}
+        language={language}
+      />
 
       <div className="container my-5 pt-4">
         <div className="row">

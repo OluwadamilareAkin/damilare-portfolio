@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { TbArrowNarrowLeft, TbArrowNarrowRight } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
-const ImageSlider = ({ image, language }) => {
-  const CollectionSize = image.length - 2;
+const ImageSlider = ({ image, count, title, id, language }) => {
+  const CollectionSize = count;
   const [index, setActiveStep] = useState(0);
 
   const goToNextPicture = () => {
-    if (index <= CollectionSize) {
+    if (index < CollectionSize - 1) {
       setActiveStep((prevActiveStep) => prevActiveStep + 1);
     }
   };
@@ -39,7 +40,15 @@ const ImageSlider = ({ image, language }) => {
             </div>
           </div>
         </div>
-        <div className="carouselImages">
+        <div className="carouselImages position-relative">
+          <div className="hover-hidden">
+            <div>
+              <h3>{title[index]}</h3>
+              <Link className="linky" to={`/project/${id[index]}`}>
+                View Project
+              </Link>
+            </div>
+          </div>
           <img
             className="w-100"
             src={`https://${image[index]}`}
@@ -47,14 +56,8 @@ const ImageSlider = ({ image, language }) => {
           />
         </div>
         <p className="mt-4 text-center fw-bold text-md opaq">
-          {index + 1}/{CollectionSize + 2}
+          {index + 1}/{CollectionSize}
         </p>
-        {/* <div className="dots text-center mt-4 mb-3">
-          <div className="active"></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div> */}
       </div>
     </>
   );

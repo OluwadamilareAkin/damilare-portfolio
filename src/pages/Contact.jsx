@@ -85,13 +85,23 @@ const Contact = ({ portfolio, language, setLanguage }) => {
 
           <div className="col-12 col-md-7 mb-5">
             <div className="px-3">
-              <form action="#">
+              <form
+                action="https://formsubmit.io/send/vindamilare@gmail.com"
+                method="POST"
+                target="_blank"
+              >
+                <input
+                  name="_formsubmit_id"
+                  type="text"
+                  style={{ display: "none" }}
+                />
                 <div className="form-group mb-4">
                   <label>Name</label>
                   <input
                     type="text"
                     className="form-control py-3 px-4 my-2"
                     name="Name"
+                    required
                   />
                 </div>
                 <div className="form-group mb-4">
@@ -102,6 +112,7 @@ const Contact = ({ portfolio, language, setLanguage }) => {
                     type="email"
                     className="form-control py-3 px-4 my-2"
                     name="EmailAddress"
+                    required
                   />
                 </div>
                 <div className="form-group mb-4">
@@ -110,6 +121,7 @@ const Contact = ({ portfolio, language, setLanguage }) => {
                     type="text"
                     className="form-control py-3 px-4 my-2"
                     name="Subject"
+                    required
                   />
                 </div>
                 <div className="form-group mb-4">
@@ -118,10 +130,11 @@ const Contact = ({ portfolio, language, setLanguage }) => {
                     className="form-control py-3 px-4 my-2"
                     name="Message"
                     rows="5"
+                    required
                   ></textarea>
                 </div>
                 <div className="form-group mb-4">
-                  <button className="btn my-btn py-2 px-4">
+                  <button type="submit" className="btn my-btn py-2 px-4">
                     {language === "de" ? "Nachricht Senden" : "Send Message"}{" "}
                     <TbSend className="ms-3" />
                   </button>

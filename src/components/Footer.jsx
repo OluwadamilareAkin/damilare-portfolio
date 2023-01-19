@@ -9,6 +9,18 @@ import {
 } from "react-icons/tb";
 
 const Footer = ({ language, setLanguage }) => {
+  const downloadResume = () => {
+    fetch(window.location.origin + "/resume.pdf").then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "Vincent_Akinyoyenu_Resume.pdf";
+        alink.click();
+      });
+    });
+  };
+
   return (
     <>
       <footer className="mt-4">
@@ -26,7 +38,10 @@ const Footer = ({ language, setLanguage }) => {
                     ? "Ich bin bereit, Teil Ihres Teams zu werden. Gemeinsam können wir Ihren Kunden das beste Nutzererlebnis bieten."
                     : "I am set to be a part of your team. Together we can give your customers the best user experience."}
                 </p>
-                <button className="btn my-btn py-2 px-3">
+                <button
+                  onClick={downloadResume}
+                  className="btn my-btn py-2 px-3"
+                >
                   <span className="me-3">
                     {language === "de"
                       ? "Lebenslauf Herunterladen"
@@ -69,7 +84,17 @@ const Footer = ({ language, setLanguage }) => {
           <hr className="bg-blue" />
           <div className="container py-3">
             <div className="row g-5 align-items-center">
-              <div className="col-12 col-md-3">
+              <div className="col-12 col-md-3 d-flex align-items-center">
+                <img
+                  style={{
+                    width: "3.5rem",
+                    height: "3.5rem",
+                    borderRadius: "50%",
+                  }}
+                  className="me-2"
+                  src={require("../assets/images/footerImage.jpeg")}
+                  alt="Vincent Oluwadamilare Akinyoyenu"
+                />
                 <p className="mb-0 small">
                   Vincent Oluwadamilare Akinyoyenu
                   <br />

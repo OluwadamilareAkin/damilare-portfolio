@@ -66,13 +66,13 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
                     {location === "/about" ? (
                       <li className="active">
                         <Link className="nav-link" to="/about">
-                          Über
+                          Über Mich
                         </Link>
                       </li>
                     ) : (
                       <li>
                         <Link className="nav-link" to="/about">
-                          Über
+                          Über Mich
                         </Link>
                       </li>
                     )}

@@ -10,6 +10,12 @@ const Projects = ({ portfolio, language, setLanguage }) => {
 
   const { id } = useParams();
 
+  let locale = "en-US";
+
+  if (language !== "en") {
+    locale = language;
+  }
+
   //getting all portfolio
   useEffect(() => {
     const client = createClient({
@@ -19,16 +25,18 @@ const Projects = ({ portfolio, language, setLanguage }) => {
 
     const getPortfolio = async () => {
       try {
-        await client.getEntry(id).then((entries) => {
-          setLPortfolio(entries);
-        });
+        await client
+          .getEntries({ "sys.id": id, locale: locale })
+          .then((entries) => {
+            setLPortfolio(entries?.items[0]);
+          });
       } catch (error) {
         console.log(error);
       }
     };
 
     getPortfolio();
-  }, [id]);
+  }, [id, locale]);
 
   return (
     <>
