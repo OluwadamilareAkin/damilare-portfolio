@@ -18,7 +18,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
     setCount(port?.length);
 
     port?.map((item) =>
-      setImage((image) => [...image, item.fields.displayImage.fields.file.url])
+      setImage((image) => [...image, item.fields.displayimage.fields.file.url])
     );
 
     port?.map((item) => setTitle((title) => [...title, item.fields.title]));
