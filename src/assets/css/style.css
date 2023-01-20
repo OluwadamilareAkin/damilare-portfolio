@@ -24,7 +24,7 @@ a {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
-  animation: roll 0.9s infinite;
+  animation: roll 2s infinite;
 }
 @keyframes roll {
   from {
