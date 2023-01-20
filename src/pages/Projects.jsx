@@ -19,8 +19,8 @@ const Projects = ({ portfolio, language, setLanguage }) => {
   //getting all portfolio
   useEffect(() => {
     const client = createClient({
-      space: "jo2fczow80gl",
-      accessToken: "mg_6N-Aic7XDYQH0n-CAlB9qkm8E8Udr0wnIYmdMd8M",
+      space: "7yt6klof8zh3",
+      accessToken: "3JpixbqpAJO61rKytUYVMulIKCFGBAEsm1Mvy7dZK0I",
     });
 
     const getPortfolio = async () => {
@@ -59,12 +59,12 @@ const Projects = ({ portfolio, language, setLanguage }) => {
                   <p>Duration: {lPortfolio?.fields?.duration}</p>
                   <img
                     key={lPortfolio?.sys?.id}
-                    src={`https:${lPortfolio?.fields?.displayImage?.fields?.file?.url}`}
+                    src={`https:${lPortfolio?.fields?.displayimage?.fields?.file?.url}`}
                     className="w-100 mx-auto d-block mt-4 mb-5"
                     alt={lPortfolio?.fields?.title}
                   />
                   <ReactMarkdown className="markdown">
-                    {lPortfolio?.fields?.mainBody}
+                    {lPortfolio?.fields?.mainbody}
                   </ReactMarkdown>
                 </div>
               </div>
