@@ -7,6 +7,7 @@ import { Footer, Navbar } from "../components/index";
 
 const Projects = ({ portfolio, language, setLanguage }) => {
   const [lPortfolio, setLPortfolio] = useState([]);
+  const [image, setImage] = useState();
 
   const { id } = useParams();
 
@@ -36,7 +37,20 @@ const Projects = ({ portfolio, language, setLanguage }) => {
       }
     };
 
+    const getImage = async () => {
+      try {
+        await client
+          .getEntries({ "sys.id": id })
+          .then((entries) => {
+            setImage(entries?.items[0]?.fields?.dispalyimage?.fields?.file?.url);
+          });
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
     getPortfolio();
+    getImage();
   }, [id, locale]);
 
   return (
@@ -55,12 +69,12 @@ const Projects = ({ portfolio, language, setLanguage }) => {
               <div className="col-12">
                 <div className="px-3">
                   <p>{lPortfolio?.fields?.title}</p>
-                  <p>Role: {lPortfolio?.fields?.role}</p>
+                  <p>Role: UI/UX Designer</p>
                   <p>Context: {lPortfolio?.fields?.context}</p>
                   <p>Duration: {lPortfolio?.fields?.duration}</p>
                   <img
                     key={lPortfolio?.sys?.id}
-                    src={`https:${lPortfolio?.fields?.dispalyimage?.fields?.file?.url}`}
+                    src={`https:${image}`}
                     className="w-100 mx-auto d-block mt-4 mb-5"
                     alt={lPortfolio?.fields?.title}
                   />
