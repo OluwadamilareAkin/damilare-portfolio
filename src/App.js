@@ -23,12 +23,6 @@ const App = () => {
     }
   }, []);
 
-  let locale = "en-US";
-
-  if (language !== "en") {
-    locale = language;
-  }
-
   //getting all portfolio
   useEffect(() => {
     const client = createClient({
@@ -38,7 +32,7 @@ const App = () => {
 
     const getAllPortfolio = async () => {
       try {
-        await client.getEntries({ locale: locale }).then((entries) => {
+        await client.getEntries({}).then((entries) => {
           setPortfolio(entries);
         });
       } catch (error) {
@@ -47,7 +41,7 @@ const App = () => {
     };
 
     getAllPortfolio();
-  }, [locale]);
+  }, []);
 
   return (
     <>
