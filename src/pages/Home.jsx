@@ -8,13 +8,14 @@ import userMain from "../assets/images/user-main.jpeg";
 import testimonial from "../assets/images/testimonial-1.jpeg";
 
 const Home = ({ portfolio, language, setLanguage }) => {
-  console.log(portfolio);
   const [image, setImage] = useState([]);
   const [title, setTitle] = useState([]);
   const [id, setId] = useState([]);
   const [count, setCount] = useState(0);
 
   let port = portfolio?.items;
+  console.log(port);
+  
   useEffect(() => {
     setCount(port?.length);
 
