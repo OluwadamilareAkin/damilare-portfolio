@@ -221,8 +221,8 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
                 )}
               </div>
 
-              <div className="ms-md-3">
-                <div className="d-flex align-items-center mt-0 mt-md-1 pt-1">
+              <div className="ms-md-5">
+                <div className="d-flex align-items-center mt-0 pt-1">
                   <select
                     onChange={changeLanguage}
                     value={language}
