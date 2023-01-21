@@ -38,7 +38,7 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
                   Oluwadamilare Vincent Akinyoyenu
                 </span>
               </div>
-              <div className={`d-none mt-2 pt-1 d-md-block me-auto sidebar ${isOpen}`}>
+              <div className={`d-none mt-2 pt-1 d-md-block ms-auto sidebar ${isOpen}`}>
                 <div
                   className="close d-block d-md-none"
                   onClick={() => {
