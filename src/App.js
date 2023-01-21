@@ -23,11 +23,11 @@ const App = () => {
     }
   }, []);
 
-  // let locale = "en-US";
+  let locale = "en-US";
 
-  // if (language !== "en") {
-  //   locale = language;
-  // }
+  if (language !== "en") {
+    locale = language;
+  }
 
   //getting all portfolio
   useEffect(() => {
@@ -38,7 +38,7 @@ const App = () => {
 
     const getAllPortfolio = async () => {
       try {
-        await client.getEntries().then((entries) => {
+        await client.getEntries({ locale: locale }).then((entries) => {
           setPortfolio(entries);
         });
       } catch (error) {
@@ -47,7 +47,7 @@ const App = () => {
     };
 
     getAllPortfolio();
-  }, []);
+  }, [locale]);
 
   return (
     <>

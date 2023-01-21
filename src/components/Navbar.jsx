@@ -92,7 +92,7 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
                               className="my-dropcontent-link"
                               to={`/project/${slug.sys.id}`}
                             >
-                              {slug.fields.slug}
+                              {slug.fields.title}
                             </Link>
                           ))}
                         </div>
@@ -178,7 +178,7 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
                               className="my-dropcontent-link"
                               to={`/project/${slug.sys.id}`}
                             >
-                              {slug.fields.slug}
+                              {slug.fields.title}
                             </Link>
                           ))}
                         </div>
@@ -197,7 +197,7 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
                               className="my-dropcontent-link"
                               to={`/project/${slug.sys.id}`}
                             >
-                              {slug.fields.slug}
+                              {slug.fields.title}
                             </Link>
                           ))}
                         </div>

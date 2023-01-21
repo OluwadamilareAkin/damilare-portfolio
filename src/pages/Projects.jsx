@@ -29,7 +29,6 @@ const Projects = ({ portfolio, language, setLanguage }) => {
           .getEntries({ "sys.id": id, locale: locale })
           .then((entries) => {
             setLPortfolio(entries?.items[0]);
-            console.log(entries?.items[0]);
           });
       } catch (error) {
         console.log(error);

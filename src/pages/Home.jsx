@@ -14,7 +14,6 @@ const Home = ({ portfolio, language, setLanguage }) => {
   const [count, setCount] = useState(0);
 
   let port = portfolio?.items;
-  console.log(port);
   
   useEffect(() => {
     setCount(port?.length);
