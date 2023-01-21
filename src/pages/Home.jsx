@@ -8,6 +8,7 @@ import userMain from "../assets/images/user-main.jpeg";
 import testimonial from "../assets/images/testimonial-1.jpeg";
 
 const Home = ({ portfolio, language, setLanguage }) => {
+  console.log(portfolio);
   const [image, setImage] = useState([]);
   const [title, setTitle] = useState([]);
   const [id, setId] = useState([]);
