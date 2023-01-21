@@ -24,14 +24,14 @@ a {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
-  animation: roll 2s infinite;
+  animation: roll 8s infinite;
 }
 @keyframes roll {
   from {
-    background-position: 50% 100%;
+    background-position: right;
   }
   to {
-    background-position: 25% 75%;
+    background-position: left;
   }
 }
 .hover-hidden {
