@@ -60,7 +60,7 @@ const Projects = ({ portfolio, language, setLanguage }) => {
                   <p>Duration: {lPortfolio?.fields?.duration}</p>
                   <img
                     key={lPortfolio?.sys?.id}
-                    src={`https:${lPortfolio?.fields?.displayimage?.fields?.file?.url}`}
+                    src={`https:${lPortfolio?.fields?.dispalyimage?.fields?.file?.url}`}
                     className="w-100 mx-auto d-block mt-4 mb-5"
                     alt={lPortfolio?.fields?.title}
                   />
