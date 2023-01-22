@@ -121,7 +121,7 @@ const Footer = ({ language, setLanguage }) => {
                 <p className="mb-2 small">
                   {language === "de" ? "Folge mir" : "Follow Me"}
                 </p>
-                <a target="_blank" href="www.linkedin.com/in/oluwadamilare-vincent-akinyoyenu"><TbBrandLinkedin className="me-3 cursor" size={33} /></a>
+                <a target="_blank" href="https://www.linkedin.com/in/oluwadamilare-vincent-akinyoyenu"><TbBrandLinkedin className="me-3 cursor" size={33} /></a>
                 <TbBrandInstagram className="me-3 d-none cursor" size={33} />
                 <TbBrandTwitter className="cursor d-none" size={33} />
               </div>
