@@ -22,6 +22,7 @@ a {
 code{
   background-color: inherit !important;
   color: crimson !important;
+  font-family: inherit !important;
 }
 .wave-bg {
   background-image: url("../images/wave.svg");
