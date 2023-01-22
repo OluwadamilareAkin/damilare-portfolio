@@ -76,14 +76,14 @@ const Projects = ({ portfolio, language, setLanguage }) => {
                   <p>Role: UI/UX Designer</p>
                   <p>Context: {lPortfolio?.fields?.context}</p>
                   <p>Duration: {lPortfolio?.fields?.duration}</p>
-                  <img
+                  {/* <img
                     key={lPortfolio?.sys?.id}
                     src={`https:${image}`}
                     className="w-100 mx-auto d-block mt-4 mb-5"
                     alt={lPortfolio?.fields?.title}
-                  />
+                  /> */}
                   <ReactMarkdown className="markdown">
-                    {lPortfolio?.fields?.mainbody}
+                    {lPortfolio?.fields?.mainBody}
                   </ReactMarkdown>
                 </div>
               </div>
