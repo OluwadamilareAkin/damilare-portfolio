@@ -23,6 +23,7 @@ code{
   background-color: inherit !important;
   color: crimson !important;
   font-family: inherit !important;
+  font-size: 100%;
 }
 .wave-bg {
   background-image: url("../images/wave.svg");
@@ -36,7 +37,7 @@ code{
     background-position: right;
   }
   to {
-    background-position: -50% left;
+    background-position: left -50%;
   }
 }
 .hover-hidden {

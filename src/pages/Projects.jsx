@@ -7,7 +7,7 @@ import { Footer, Navbar } from "../components/index";
 
 const Projects = ({ portfolio, language, setLanguage }) => {
   const [lPortfolio, setLPortfolio] = useState([]);
-  //const [image, setImage] = useState();
+  const [image, setImage] = useState();
 
   const { id } = useParams();
 
@@ -19,14 +19,9 @@ const Projects = ({ portfolio, language, setLanguage }) => {
 
   //getting all portfolio
   useEffect(() => {
-    // const client = createClient({
-    //   space: "7yt6klof8zh3",
-    //   accessToken: "3JpixbqpAJO61rKytUYVMulIKCFGBAEsm1Mvy7dZK0I",
-    // });
-
     const client = createClient({
-      space: "jo2fczow80gl",
-      accessToken: "mg_6N-Aic7XDYQH0n-CAlB9qkm8E8Udr0wnIYmdMd8M",
+      space: "7yt6klof8zh3",
+      accessToken: "3JpixbqpAJO61rKytUYVMulIKCFGBAEsm1Mvy7dZK0I",
     });
 
     const getPortfolio = async () => {
@@ -41,20 +36,20 @@ const Projects = ({ portfolio, language, setLanguage }) => {
       }
     };
 
-    // const getImage = async () => {
-    //   try {
-    //     await client
-    //       .getEntries({ "sys.id": id })
-    //       .then((entries) => {
-    //         setImage(entries?.items[0]?.fields?.dispalyimage?.fields?.file?.url);
-    //       });
-    //   } catch (error) {
-    //     console.log(error);
-    //   }
-    // };
+    const getImage = async () => {
+      try {
+        await client
+          .getEntries({ "sys.id": id })
+          .then((entries) => {
+            setImage(entries?.items[0]?.fields?.dispalyimage?.fields?.file?.url);
+          });
+      } catch (error) {
+        console.log(error);
+      }
+    };
 
     getPortfolio();
-    //getImage();
+    getImage();
   }, [id, locale]);
 
   return (
@@ -76,12 +71,12 @@ const Projects = ({ portfolio, language, setLanguage }) => {
                   <p>Role: UI/UX Designer</p>
                   <p>Context: {lPortfolio?.fields?.context}</p>
                   <p>Duration: {lPortfolio?.fields?.duration}</p>
-                  {/* <img
+                  <img
                     key={lPortfolio?.sys?.id}
                     src={`https:${image}`}
                     className="w-100 mx-auto d-block mt-4 mb-5"
                     alt={lPortfolio?.fields?.title}
-                  /> */}
+                  />
                   <ReactMarkdown className="markdown">
                     {lPortfolio?.fields?.mainBody}
                   </ReactMarkdown>
