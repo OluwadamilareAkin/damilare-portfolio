@@ -34,10 +34,10 @@ code{
 }
 @keyframes roll {
   from {
-    background-position: right;
+    background-position: 100% 0%;
   }
   to {
-    background-position: left -50%;
+    background-position: -50% 0%;
   }
 }
 .wave-2bg {
@@ -49,10 +49,10 @@ code{
 }
 @keyframes roll2 {
   from {
-    background-position: -30rem left;
+    background-position: -50% 0%;
   }
   to {
-    background-position: right;
+    background-position: 100% 0%;
   }
 }
 .hover-hidden {
