@@ -7,7 +7,7 @@ import { Footer, Navbar } from "../components/index";
 
 const Projects = ({ portfolio, language, setLanguage }) => {
   const [lPortfolio, setLPortfolio] = useState([]);
-  const [image, setImage] = useState();
+  //const [image, setImage] = useState();
 
   const { id } = useParams();
 
@@ -41,20 +41,20 @@ const Projects = ({ portfolio, language, setLanguage }) => {
       }
     };
 
-    const getImage = async () => {
-      try {
-        await client
-          .getEntries({ "sys.id": id })
-          .then((entries) => {
-            setImage(entries?.items[0]?.fields?.dispalyimage?.fields?.file?.url);
-          });
-      } catch (error) {
-        console.log(error);
-      }
-    };
+    // const getImage = async () => {
+    //   try {
+    //     await client
+    //       .getEntries({ "sys.id": id })
+    //       .then((entries) => {
+    //         setImage(entries?.items[0]?.fields?.dispalyimage?.fields?.file?.url);
+    //       });
+    //   } catch (error) {
+    //     console.log(error);
+    //   }
+    // };
 
     getPortfolio();
-    getImage();
+    //getImage();
   }, [id, locale]);
 
   return (
