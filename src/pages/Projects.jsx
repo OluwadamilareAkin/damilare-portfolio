@@ -19,9 +19,14 @@ const Projects = ({ portfolio, language, setLanguage }) => {
 
   //getting all portfolio
   useEffect(() => {
+    // const client = createClient({
+    //   space: "7yt6klof8zh3",
+    //   accessToken: "3JpixbqpAJO61rKytUYVMulIKCFGBAEsm1Mvy7dZK0I",
+    // });
+
     const client = createClient({
-      space: "7yt6klof8zh3",
-      accessToken: "3JpixbqpAJO61rKytUYVMulIKCFGBAEsm1Mvy7dZK0I",
+      space: "jo2fczow80gl",
+      accessToken: "mg_6N-Aic7XDYQH0n-CAlB9qkm8E8Udr0wnIYmdMd8M",
     });
 
     const getPortfolio = async () => {

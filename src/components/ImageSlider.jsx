@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import { TbArrowNarrowLeft, TbArrowNarrowRight } from "react-icons/tb";
 import { Link } from "react-router-dom";
 
-const ImageSlider = ({ image, count, title, id, language }) => {
+const ImageSlider = ({ imageArr, count, title, id, language }) => {
   const CollectionSize = count;
   const [index, setActiveStep] = useState(0);
+
+  // if(imageArr.dispalyimage.fields.file.url){
+  //   const image
+  // }
 
   const goToNextPicture = () => {
     if (index < CollectionSize - 1) {
@@ -51,7 +55,7 @@ const ImageSlider = ({ image, count, title, id, language }) => {
           </div>
           <img
             className="w-100"
-            src={`https://${image[index]}`}
+            src={`https://${imageArr[index].dispalyimage.fields.file.url}`}
             alt="portfolio"
           />
         </div>

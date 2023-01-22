@@ -18,9 +18,8 @@ const Home = ({ portfolio, language, setLanguage }) => {
   useEffect(() => {
     setCount(port?.length);
 
-    port?.map((item) =>
-      setImage((image) => [...image, item.fields.dispalyimage.fields.file.url])
-    );
+    port?.map((item) => 
+    setImage((image) => [...image, item.fields]));
 
     port?.map((item) => setTitle((title) => [...title, item.fields.title]));
 
