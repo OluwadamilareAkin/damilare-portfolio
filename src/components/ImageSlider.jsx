@@ -6,6 +6,8 @@ const ImageSlider = ({ imageArr, count, title, id, language }) => {
   const CollectionSize = count;
   const [index, setActiveStep] = useState(0);
 
+  console.log(imageArr);
+  
   // if(imageArr.dispalyimage.fields.file.url){
   //   const image
   // }
