@@ -18,8 +18,9 @@ const Home = ({ portfolio, language, setLanguage }) => {
   useEffect(() => {
     setCount(port?.length);
 
-    port?.map((item) => 
-    setImage((image) => [...image, item.fields]));
+    port?.map((item) =>
+      setImage((image) => [...image, item.fields.dispalyimage.fields.file.url])
+    );
 
     port?.map((item) => setTitle((title) => [...title, item.fields.title]));
 
@@ -192,7 +193,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
       </div>
 
       <ImageSlider
-        imageArr={image}
+        image={image}
         count={count}
         id={id}
         title={title}
