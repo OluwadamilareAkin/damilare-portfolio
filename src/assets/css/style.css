@@ -49,10 +49,10 @@ code{
 }
 @keyframes roll2 {
   from {
-    background-position: left;
+    background-position: -30rem left;
   }
   to {
-    background-position: right -50%;
+    background-position: right;
   }
 }
 .hover-hidden {
