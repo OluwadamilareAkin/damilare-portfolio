@@ -78,7 +78,7 @@ const Projects = ({ portfolio, language, setLanguage }) => {
                     alt={lPortfolio?.fields?.title}
                   />
                   <ReactMarkdown className="markdown">
-                    {lPortfolio?.fields?.mainBody}
+                    {lPortfolio?.fields?.mainbody}
                   </ReactMarkdown>
                 </div>
               </div>
