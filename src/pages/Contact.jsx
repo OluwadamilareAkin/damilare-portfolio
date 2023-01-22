@@ -76,9 +76,9 @@ const Contact = ({ portfolio, language, setLanguage }) => {
                 <p className="mb-3">
                   {language === "de" ? "Folge mir" : "Follow Me"}
                 </p>
-                <TbBrandLinkedin className="me-3 cursor" size={33} />
-                <TbBrandInstagram className="me-3 cursor" size={33} />
-                <TbBrandTwitter className="cursor" size={33} />
+                <a target="_blank" href="www.linkedin.com/in/oluwadamilare-vincent-akinyoyenu"><TbBrandLinkedin className="me-3 cursor" size={33} /></a>
+                <TbBrandInstagram className="me-3 cursor d-none" size={33} />
+                <TbBrandTwitter className="cursor d-none" size={33} />
               </div>
             </div>
           </div>

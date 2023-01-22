@@ -33,11 +33,17 @@ code{
   animation: roll 8s infinite;
 }
 @keyframes roll {
-  from {
+  0% {
     background-position: 100% 0%;
   }
-  to {
+  25% {
+    background-position: -75% 0%;
+  }
+  50% {
     background-position: -50% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
   }
 }
 .wave-2bg {
@@ -48,11 +54,17 @@ code{
   animation: roll2 8s infinite;
 }
 @keyframes roll2 {
-  from {
+  0% {
+    background-position: -75% 0%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
     background-position: -50% 0%;
   }
-  to {
-    background-position: 100% 0%;
+  100% {
+    background-position: -75% 0%;
   }
 }
 .hover-hidden {
