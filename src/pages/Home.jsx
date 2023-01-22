@@ -192,7 +192,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
       </div>
 
       <ImageSlider
-        image={image}
+        imageArr={image}
         count={count}
         id={id}
         title={title}
