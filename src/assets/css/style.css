@@ -19,6 +19,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+code{
+  background-color: inherit !important;
+  color: crimson !important;
+}
 .wave-bg {
   background-image: url("../images/wave.svg");
   background-attachment: fixed;
@@ -31,7 +35,7 @@ a {
     background-position: right;
   }
   to {
-    background-position: left;
+    background-position: -50% left;
   }
 }
 .hover-hidden {
