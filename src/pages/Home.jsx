@@ -268,7 +268,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
                       src={userMain}
                       alt="Oluwadamilare Vincent Akinyoyenu"
                     />
-                    <div className="play-btn shadow">
+                    <div className="play-btn shadow d-none">
                       <TbPlayerPlay />
                     </div>
                   </div>

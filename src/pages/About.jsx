@@ -25,7 +25,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
                   ? "Ich bin UI/UX-Designer und lebe in Berlin, Deutschland. UX ist zentral für alles, was ich tue. Ich liebe es, an sinnvollen Projekten mit inspirierenden, kreativen Menschen zu arbeiten, die den Status quo mit dem Fokus auf User Experience in Frage stellen."
                   : "I am a UI/UX designer living in Berlin, Germany. UX is central to everything I do. I love to work on meaningful projects with inspiring, creative people that challenge the status quo with a focus on user experience."}
               </p>
-              <div className="bg-blue wave-bg rounded px-3 px-md-5 py-5 text-white mb-5">
+              <div className="bg-blue wave-2bg rounded px-3 px-md-5 py-5 text-white mb-5">
                 <h5 className="fw-bold text-center mb-5 lh-3">
                   {language === "de"
                     ? "Wie ich Design als Problemlösungsinstrument einsetze."
@@ -154,7 +154,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
                 </div>
               </div>
 
-              <div className="bg-blue wave-bg rounded px-3 px-md-5 py-5 text-white mb-5">
+              <div className="bg-blue wave-2bg rounded px-3 px-md-5 py-5 text-white mb-5">
                 <h5 className="fw-bold text-center mb-3 lh-3">
                   {language === "de" ? "Werkzeuge" : "Tools"}
                 </h5>

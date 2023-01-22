@@ -40,6 +40,21 @@ code{
     background-position: left -50%;
   }
 }
+.wave-2bg {
+  background-image: url("../images/wave.svg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: roll2 8s infinite;
+}
+@keyframes roll2 {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right -50%;
+  }
+}
 .hover-hidden {
   display: none;
 }
