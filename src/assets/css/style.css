@@ -19,7 +19,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-code{
+code {
   background-color: inherit !important;
   color: crimson !important;
   font-family: inherit !important;
@@ -157,6 +157,13 @@ code{
 }
 .text-blue {
   color: var(--bg-blue);
+}
+.text-break {
+  white-space: nowrap;
+  display: block;
+  width: 18rem;
+  overflow: hidden;
+  text-overflow: ellipsis !important;
 }
 .lh-3 {
   line-height: 1.9rem;

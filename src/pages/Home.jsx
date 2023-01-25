@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 
 import { TbPlayerPlay } from "react-icons/tb";
-import { Footer, Navbar, ImageSlider } from "../components/index";
+import { Footer, Navbar, ImageSlider, Testimonial } from "../components/index";
 
 import myImage from "../assets/images/user.png";
 import userMain from "../assets/images/user-main.jpeg";
-import testimonial from "../assets/images/testimonial-1.jpeg";
 
 const Home = ({ portfolio, language, setLanguage }) => {
   const [image, setImage] = useState([]);
@@ -14,7 +13,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
   const [count, setCount] = useState(0);
 
   let port = portfolio?.items;
-  
+
   useEffect(() => {
     setCount(port?.length);
 
@@ -215,25 +214,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
                     Here are some testimonies from my previous and current
                     employers, collegues and clients.
                   </p>
-                  <div className="testimony mb-5">
-                    <p className="message my-0">
-                      “Great designer, Vincent’s flexibility to change is a
-                      great strengh. Always ready to learn from previous
-                      mistakes.”
-                    </p>
-                    <div className="d-flex mt-5">
-                      <img
-                        className="me-3 rounded"
-                        src={testimonial}
-                        alt="Akinola Babalola"
-                      />
-                      <p className="align-self-end">
-                        Akinola Babalola
-                        <br />
-                        Project Supervisor KodeCamp
-                      </p>
-                    </div>
-                  </div>
+                  <Testimonial />
                   <h4 className="fw-bold mb-3">
                     {language === "de"
                       ? "Meine Dienstleistungen"
