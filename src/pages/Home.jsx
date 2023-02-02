@@ -191,13 +191,19 @@ const Home = ({ portfolio, language, setLanguage }) => {
         </div>
       </div>
 
-      <ImageSlider
-        image={image}
-        count={count}
-        id={id}
-        title={title}
-        language={language}
-      />
+      <div className="container">
+        <div className="row">
+          <div className="col-md-10 mx-auto">
+            <ImageSlider
+              image={image}
+              count={count}
+              id={id}
+              title={title}
+              language={language}
+            />
+          </div>
+        </div>
+      </div>
 
       <div className="container my-5 pt-4">
         <div className="row">
