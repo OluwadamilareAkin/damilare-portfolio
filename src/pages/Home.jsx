@@ -193,7 +193,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
 
       <div className="container">
         <div className="row">
-          <div className="col-md-10 mx-auto">
+          <div className="col-12 mx-auto">
             <ImageSlider
               image={image}
               count={count}
