@@ -133,8 +133,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
                     Die Ära Covid 19 hat mich in die Welt des UIUX-Designs,
                     HTML, CSS und der menschlichen Psychologie eingeführt.
                     Derzeit bin ich Masterstudentin an der University of Europe
-                    for Applied Sciences und studiere New Media Design. Außerdem
-                    bin ich bei der Coconet GmbH als Werkstudent tätig.
+                    for Applied Sciences und studiere New Media Design. Zuletzt habe ich als Werkstudentin bei Coconet Innovations, Düsseldorf, Deutschland gearbeitet
                     <br />
                     <br />
                     In meiner Freizeit engagiere ich mich ehrenamtlich und
@@ -169,8 +168,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
                     The Covid 19 era launched me into the world of UIUX design,
                     HTML, CSS and Human psychology. I am currently a master
                     student at the University of Europe for Applied sciences
-                    studying New Media Design. I am also working with Coconet
-                    GmbH as a working student.
+                    studying New Media Design. I recently worked as a working student with Coconet Innovations, Düsseldorf, Germany
                     <br />
                     <br />
                     I devote my spare time to volunteering and environment
