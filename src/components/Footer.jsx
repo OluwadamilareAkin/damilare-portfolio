@@ -114,7 +114,7 @@ const Footer = ({ language, setLanguage }) => {
                 <p className="mb-0 small">
                   Email
                   <br />
-                  vindamilare@gmail
+                  vindamilare@gmail.com
                 </p>
               </div>
               <div className="col-12 col-md-3">
