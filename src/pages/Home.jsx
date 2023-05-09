@@ -116,71 +116,39 @@ const Home = ({ portfolio, language, setLanguage }) => {
                 <>
                   <h4 className="fw-bold">Ein wenig über mich</h4>
                   <p className="lh-2">
-                    Ich bin Oluwadamilare Vincent Akinyoyenu, ein
-                    Produktdesigner, UX-Führer, Erlebnisstratege, Content
-                    Creator und ein umweltliebender Introvertierter.
+                    Ich bin Oluwadamilare Vincent Akinyoyenu, ein Produktdesigner, UX-Mentor, Erlebnisstratege, Inhaltsersteller und umweltbegeisterter Introvertierter.
                     <br />
                     <br />
-                    Ich respektiere generell, dass kreatives Design die
-                    Fähigkeit hat, unsere Realität zu verändern. Ganz gleich, ob
-                    es um die Verbesserung der aktuellen Interaktion geht oder
-                    darum, den Nutzern eine neue Möglichkeit zu bieten, aus
-                    einem anderen Blickwinkel zu sehen. Ich liebe es, mich mit
-                    Projekten zu beschäftigen, die ein gutes Nutzererlebnis
+                    Ich habe schon immer bewundert, wie kreative Designs unsere Realität verändern können, sei es durch die Verbesserung aktueller Interaktionen oder indem sie den Benutzern eine neue Perspektive bieten. Es macht mir Spaß, an Projekten zu arbeiten, die außergewöhnliche Nutzererlebnisse bieten.
                     bieten.
                     <br />
                     <br />
-                    Die Ära Covid 19 hat mich in die Welt des UIUX-Designs,
-                    HTML, CSS und der menschlichen Psychologie eingeführt.
-                    Derzeit bin ich Masterstudentin an der University of Europe
-                    for Applied Sciences und studiere New Media Design. Zuletzt habe ich als Werkstudentin bei Coconet Innovations, Düsseldorf, Deutschland gearbeitet
+                    Während meines ersten Bachelor-Studiums entdeckte ich meine Liebe für UI/UX-Design, HTML, CSS und menschliche Psychologie. Das hat mich dazu inspiriert, eine Karriere in diesem Bereich anzustreben, und ich bin derzeit Masterstudentin an der University of Europe for Applied Sciences und studiere Mediendesign. Außerdem bin ich UX-Mentorin für neue UX-Design-Studenten bei TechLabs.
                     <br />
                     <br />
-                    In meiner Freizeit engagiere ich mich ehrenamtlich und
-                    nachhaltig für die Umwelt.
+                    In meiner Freizeit engagiere ich mich ehrenamtlich und nehme an umweltfreundlichen Aktivitäten teil. 
                     <br />
                     <br />
-                    Gefällt Ihnen mein Profil? Dann habe ich hier ein Zitat für
-                    Sie.
-                    <br />
-                    <span className="text-blue">
-                      "Alles beginnt mit einer Idee, und am Ende muss der
-                      Endnutzer zufrieden sein."
-                    </span>
+                    Um es mit einem Zitat zusammenzufassen: <span className="text-blue">"Alles beginnt mit einer Idee, und am Ende müssen die Endnutzer zufrieden sein."</span>
                   </p>
                 </>
               ) : (
                 <>
                   <h4 className="fw-bold">A bit about me</h4>
                   <p className="lh-2">
-                    I am Oluwadamilare Vincent Akinyoyenu, a product designer,
-                    UX leader, experience strategist, content creator and an
-                    environment loving introvert.
+                    I am Oluwadamilare Vincent Akinyoyenu, a product designer, UX mentor, experience strategist, content creator, and environment-loving introvert.
                     <br />
                     <br />
-                    I’ve generally respected how creative designs has the
-                    ability to change our reality. Regardless of whether it’s
-                    through improving current interaction or offering users a
-                    fresh opportunity to see from a different focal lens. I love
-                    dealing with projects that deliver a good user experience.
+                    I've always admired how creative designs have the ability to change our reality, whether it's through improving current interactions or offering users a fresh perspective. I enjoy working on projects that deliver exceptional user experiences.
                     <br />
                     <br />
-                    The Covid 19 era launched me into the world of UIUX design,
-                    HTML, CSS and Human psychology. I am currently a master
-                    student at the University of Europe for Applied sciences
-                    studying New Media Design. I recently worked as a working student with Coconet Innovations, Düsseldorf, Germany
+                    During my first bachelor's degree, I discovered my love for UI/UX design, HTML, CSS, and human psychology. It inspired me to pursue a career in the field, and I am currently a master's student at the University of Europe for Applied Sciences studying Media Design. In addition, I am also a UX mentor for new UX design students at TechLabs.
                     <br />
                     <br />
-                    I devote my spare time to volunteering and environment
-                    sustainable activities.
+                    During my free time, I am dedicated to volunteering and participating in environmentally sustainable activities.
                     <br />
                     <br />
-                    Enjoying my profile? Well, here is a quote for you.
-                    <br />
-                    <span className="text-blue">
-                      “It all begins with an idea, and in the end, the end-users
-                      must be satisfied.”
-                    </span>
+                    To sum it up, as the quote goes, <span className="text-blue">"It all begins with an idea, and in the end, the end-users must be satisfied."</span>
                   </p>
                 </>
               )}

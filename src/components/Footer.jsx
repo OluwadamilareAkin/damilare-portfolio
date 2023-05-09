@@ -98,7 +98,7 @@ const Footer = ({ language, setLanguage }) => {
                 <p className="mb-0 small">
                   Vincent Oluwadamilare Akinyoyenu
                   <br />
-                  Celsiusstraße 4, 12207 Berlin
+                  Berlin
                 </p>
               </div>
               <div className="col-6 col-md-3">
