@@ -65,7 +65,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
                         Ich bin ein UI/UX Designer.
                       </h5>
                       <p className="opaq mb-4 lh-3">
-                        UI/UX-Designer und Content-Schreiber.
+                        UI/UX-Designer.
                         <br />
                         Mit Sitz in Berlin, Deutschland. Ich bin spezialisiert
                         auf nutzerorientiertes
@@ -86,7 +86,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
                         <br />I am a UI/UX Designer.
                       </h5>
                       <p className="opaq mb-4 lh-3">
-                        UI/UX Designer and Content writing.
+                        UI/UX Designer
                         <br />
                         Based in Berlin, Germany. I specialize responsive
                         user-based
