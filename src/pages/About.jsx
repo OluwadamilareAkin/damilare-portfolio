@@ -251,80 +251,38 @@ const Home = ({ portfolio, language, setLanguage }) => {
                 <p className="px-3">
                   {language === "de" ? (
                     <>
-                      Als ich im westlichen Teil Nigerias aufwuchs, war ich
-                      fasziniert von den Technikern und wie sie die Probleme der
-                      Menschen mit Leichtigkeit lösen können. Ich habe mir
-                      geschworen, eines Tages eine Lösung zu entwickeln, die
-                      mich in die Welt der Technik bringt.
+                      Ich bin im westlichen Teil Nigerias aufgewachsen und war immer fasziniert von der Fähigkeit von Technikern, komplexe Probleme mit Leichtigkeit zu lösen. Diese Faszination führte mich schließlich in den Bereich des Designs, wo ich meine wahre Leidenschaft für Kreativität und Kommunikation entdeckte.
                       <br />
                       <br />
-                      Diese Leidenschaft entwickelte sich später zu meiner Liebe
-                      für Kreativität und Kommunikation, die meine Professoren
-                      in mir sahen und mir rieten, einen Kreativitätskurs zu
-                      belegen. So kam ich in den Bereich Design. Nach meinem
-                      Bachelor-Abschluss entwickelte ich eine Art, meine Ideen
-                      mit meinen Worten gründlich zu kommunizieren und konnte
-                      sie auch visuell mit meinen Designs vermitteln.
+                      Nach meinem Bachelor-Abschluss begann ich, mich darauf zu konzentrieren, meine Fähigkeiten im Bereich Design und Kommunikation auszubauen, um meine Fähigkeit zu verbessern, Ideen visuell und mit Worten zu vermitteln. Ich erkannte jedoch auch, wie wichtig technische Fähigkeiten auf dem umkämpften Arbeitsmarkt sind, und brachte mir HTML und CSS bei, um meine Beschäftigungsfähigkeit zu verbessern.
                       <br />
                       <br />
-                      Obwohl ich die Kommunikation und das Design liebe, war ich
-                      immer noch nicht erfüllt, also begann ich, mir mehr Wissen
-                      über Design und Code (HTML und CSS) anzueignen, damit ich
-                      mich nicht nur dazu befähigen konnte, sondern auch, um
-                      mich aufgrund der Beschäftigungssituation in meinem Land
-                      zu etablieren.
+                      Heute bin ich bestrebt, ständig zu lernen und mein Wissen zu erweitern, während ich gleichzeitig ein Gleichgewicht zwischen Design, Kommunikation und Problemlösung anstrebe. Die Möglichkeit, durch die Schaffung von Produkten, die das Leben der Menschen verbessern, etwas Positives zu bewirken, motiviert mich, mich weiterzuentwickeln und an meine Grenzen zu gehen. In meiner Freizeit erforsche ich gerne neue Tools und Techniken, um meine Designfähigkeiten zu verbessern und mit den neuesten Trends in der Branche Schritt zu halten. Außerdem bin ich ein begeisterter Leser und lerne gerne über eine Vielzahl von Themen, von Psychologie bis hin zu Nachhaltigkeit.
+                      <br/>
+                      Zusätzlich zu meinen Designfähigkeiten habe ich Erfahrung in der Arbeit in funktionsübergreifenden Teams und in der Zusammenarbeit mit Interessengruppen, um den Erfolg eines Projekts zu gewährleisten. Ich arbeite gerne in agilen Umgebungen und passe mich an wechselnde Prioritäten an.
+                      <br/>
+                      Und schließlich ist es mir ein Anliegen, einen positiven Einfluss auf die Welt zu nehmen und mit meinen Fähigkeiten zu ökologischer Nachhaltigkeit und sozialer Gerechtigkeit beizutragen.
                       <br />
                       <br />
-                      Heute konzentriere ich meine Energie darauf, so viel wie
-                      möglich zu lernen und dabei ein gesundes Gleichgewicht
-                      zwischen Design, Kommunikation und Problemlösung zu
-                      halten. Die Möglichkeit, etwas zu bewirken, indem ich
-                      Produkte entwerfe, die den Menschen helfen, ein besseres
-                      Leben zu führen, ist erfüllend.
-                      <br />
-                      <br />
-                      -Vincent Oluwadamilare
-                      <br />
-                      +491786688559
-                      <br />
-                      vindamilare@gmail.com
+                      Wenn Sie mit mir Kontakt aufnehmen möchten, erreichen Sie mich unter +491786688559 oder per E-Mail unter vindamilare@gmail.com.
                     </>
                   ) : (
                     <>
-                      Growing up in the western part of Nigeria, I was
-                      fascinated by tech guys and how they are able to solve
-                      people's problems with ease. I vowed to one day create a
-                      solution that will put me in the technology world.
+                      Growing up in the western part of Nigeria, I was always intrigued by the ability of tech professionals to solve complex problems with ease. This fascination eventually led me towards the field of design, where I found my true passion for creativity and communication.
                       <br />
                       <br />
-                      This passion later developed into my love for creativity
-                      and communication which my professors saw in me and
-                      advised that I take any creativity course. This placed my
-                      feet on the design part. After my bachelor's, I developed
-                      a way of communicating my ideas thoroughly with my words
-                      and was also able to communicate them visually with my
+                      After completing my bachelor's degree, I began to focus on enhancing my skills in design and communication, seeking to improve my ability to convey ideas visually and through words. However, I also recognized the importance of technical skills in the competitive job market, and taught myself HTML and CSS to increase my employability.
                       designs.
                       <br />
                       <br />
-                      While I love communication and design, I was still not
-                      fulfilled, I then began to teach myself more about design
-                      and code (HTML and CSS) so that I could empower myself to
-                      not only do that but also establish myself because of the
-                      employment situation in my country.
+                      Today, I am dedicated to constantly learning and expanding my knowledge, while also striving to strike a balance between design, communication, and problem-solving. The ability to make a positive impact by creating products that enhance people's lives is what motivates me to continue growing and pushing my limits. In my spare time, I enjoy exploring new tools and techniques to improve my design skills and stay up-to-date with the latest trends in the industry. I'm also an avid reader and enjoy learning about a variety of topics, from psychology to sustainability.
+                      <br/>
+                      In addition to my design skills, I have experience working in cross-functional teams and collaborating with stakeholders to ensure the success of a project. I'm comfortable working in agile environments and adapting to changing priorities.
+                      <br/>
+                      Finally, I'm committed to making a positive impact on the world and using my skills to contribute to environmental sustainability and social justice initiatives.
                       <br />
                       <br />
-                      Today, I focus my energy on learning as much as possible
-                      while maintaining a healthy balance between design,
-                      communication and solving problems. Having the ability to
-                      make a difference by designing products that help people
-                      live a better life is fulfilling.
-                      <br />
-                      <br />
-                      -Vincent Oluwadamilare
-                      <br />
-                      +491786688559
-                      <br />
-                      vindamilare@gmail.com
+                      If you need to contact me, feel free to reach me at +491786688559 or via email at vindamilare@gmail.com.
                     </>
                   )}
                 </p>
