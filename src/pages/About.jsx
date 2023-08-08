@@ -176,7 +176,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
                   <div className="col-6 col-md-4 col-lg-3 text-center">
                     <img
                       src={require("../assets/images/tools/sketch.png")}
-                      alt="Figma"
+                      alt="Sketch"
                       className="tools-img mb-2"
                     />
                     <p className="opaq">Sketch</p>
@@ -185,7 +185,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
                   <div className="col-6 col-md-4 col-lg-3 text-center">
                     <img
                       src={require("../assets/images/tools/xd.png")}
-                      alt="Figma"
+                      alt="Adobe XD"
                       className="tools-img mb-2"
                     />
                     <p className="opaq">Adobe XD</p>
@@ -194,7 +194,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
                   <div className="col-6 col-md-4 col-lg-3 text-center">
                     <img
                       src={require("../assets/images/tools/adobeId.png")}
-                      alt="Figma"
+                      alt="Adobe inDesign
                       className="tools-img mb-2"
                     />
                     <p className="opaq">Adobe inDesign</p>
@@ -203,7 +203,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
                   <div className="col-6 col-md-4 col-lg-3 text-center">
                     <img
                       src={require("../assets/images/tools/adobePs.png")}
-                      alt="Figma"
+                      alt="Adobe Photoshop"
                       className="tools-img mb-2"
                     />
                     <p className="opaq">Adobe Photoshop</p>
@@ -212,7 +212,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
                   <div className="col-6 col-md-4 col-lg-3 text-center">
                     <img
                       src={require("../assets/images/tools/adobeI.png")}
-                      alt="Figma"
+                      alt="Adobe Illustrator"
                       className="tools-img mb-2"
                     />
                     <p className="opaq">Adobe Illustrator</p>
@@ -221,7 +221,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
                   <div className="col-6 col-md-4 col-lg-3 text-center">
                     <img
                       src={require("../assets/images/tools/inVision.png")}
-                      alt="Figma"
+                      alt="inVision"
                       className="tools-img mb-2"
                     />
                     <p className="opaq">inVision</p>
@@ -230,7 +230,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
                   <div className="col-6 col-md-4 col-lg-3 text-center">
                     <img
                       src={require("../assets/images/tools/html.png")}
-                      alt="Figma"
+                      alt="HTML 5"
                       className="tools-img mb-2"
                     />
                     <p className="opaq">HTML 5</p>
@@ -239,10 +239,19 @@ const Home = ({ portfolio, language, setLanguage }) => {
                   <div className="col-6 col-md-4 col-lg-3 text-center">
                     <img
                       src={require("../assets/images/tools/css.png")}
-                      alt="Figma"
+                      alt="CSS"
                       className="tools-img mb-2"
                     />
                     <p className="opaq">CSS</p>
+                  </div>
+
+                  <div className="col-6 col-md-4 col-lg-3 text-center">
+                    <img
+                      src={require("../assets/images/tools/unity.PNG")}
+                      alt="Unity"
+                      className="tools-img mb-2"
+                    />
+                    <p className="opaq">Unity</p>
                   </div>
                 </div>
               </div>
