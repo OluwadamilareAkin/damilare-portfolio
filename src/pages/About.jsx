@@ -194,7 +194,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
                   <div className="col-6 col-md-4 col-lg-3 text-center">
                     <img
                       src={require("../assets/images/tools/adobeId.png")}
-                      alt="Adobe inDesign
+                      alt="Adobe inDesign"
                       className="tools-img mb-2"
                     />
                     <p className="opaq">Adobe inDesign</p>
