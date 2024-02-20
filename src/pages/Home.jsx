@@ -142,7 +142,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
 
               <div className="w-100 d-flex justify-content-center ceo_bg">
                 <img src={ceo} alt="Ceo image" className="w-100"/>
-                <img src={ceoIcon} alt="icons img" className=" ceo-icon"/>
+                <img src={ceoIcon} alt="icons img" className=" w-75 ceo-icon"/>
                 <img src={ceoArrow} alt="icons img" className="w-25 ceo-arrow"/>
               </div>
               
