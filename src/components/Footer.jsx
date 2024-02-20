@@ -8,7 +8,7 @@ import {
   TbPhone,
 } from "react-icons/tb";
 
-const Footer = ({ language, setLanguage }) => {
+const Footer = ({ language }) => {
   const downloadResume = () => {
     fetch(window.location.origin + "/resume.pdf").then((response) => {
       response.blob().then((blob) => {
@@ -121,7 +121,13 @@ const Footer = ({ language, setLanguage }) => {
                 <p className="mb-2 small">
                   {language === "de" ? "Folge mir" : "Follow Me"}
                 </p>
-                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/oluwadamilare-vincent-akinyoyenu"><TbBrandLinkedin className="me-3 cursor" size={33} /></a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.linkedin.com/in/oluwadamilare-vincent-akinyoyenu"
+                >
+                  <TbBrandLinkedin className="me-3 cursor" size={33} />
+                </a>
                 <TbBrandInstagram className="me-3 d-none cursor" size={33} />
                 <TbBrandTwitter className="cursor d-none" size={33} />
               </div>

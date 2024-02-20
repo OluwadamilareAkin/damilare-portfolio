@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import profileImage from "../assets/images/profileImage.png";
-import profileEnglish from "../assets/images/project-english.png";
-import profileGerman from "../assets/images/project-german.png";
 import { TbCaretDown, TbMenu2, TbX } from "react-icons/tb";
 
 const Navbar = ({ portfolio, language, setLanguage, id }) => {
@@ -40,7 +38,9 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
                   Oluwadamilare Vincent Akinyoyenu
                 </span>
               </div>
-              <div className={`d-none mt-2 pt-1 d-md-block ms-auto sidebar ${isOpen}`}>
+              <div
+                className={`d-none mt-2 pt-1 d-md-block ms-auto sidebar ${isOpen}`}
+              >
                 <div
                   className="close d-block d-md-none"
                   onClick={() => {
