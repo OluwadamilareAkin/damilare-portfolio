@@ -23,7 +23,7 @@ const Footer = ({ language, setLanguage }) => {
 
   return (
     <>
-      <footer className="mt-4">
+      <footer>
         <div className="bg-white px-3 py-5">
           <div className="container">
             <div className="row g-5">
@@ -84,7 +84,7 @@ const Footer = ({ language, setLanguage }) => {
           <hr className="bg-blue" />
           <div className="container py-3">
             <div className="row g-5 align-items-center">
-              <div className="col-12 col-md-3 d-flex align-items-center">
+              <div className="col-12 col-sm-3 d-flex align-items-center">
                 <img
                   style={{
                     width: "3.5rem",
@@ -101,7 +101,7 @@ const Footer = ({ language, setLanguage }) => {
                   Berlin
                 </p>
               </div>
-              <div className="col-6 col-md-3">
+              <div className="col-12 col-sm-3">
                 <p className="mb-0 small">
                   Phone
                   <br />
@@ -110,14 +110,14 @@ const Footer = ({ language, setLanguage }) => {
                   +4915219319686
                 </p>
               </div>
-              <div className="col-6 col-md-3">
+              <div className="col-12 col-sm-3">
                 <p className="mb-0 small">
                   Email
                   <br />
                   vindamilare@gmail.com
                 </p>
               </div>
-              <div className="col-12 col-md-3">
+              <div className="col-12 col-sm-3">
                 <p className="mb-2 small">
                   {language === "de" ? "Folge mir" : "Follow Me"}
                 </p>

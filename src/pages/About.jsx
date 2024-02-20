@@ -1,4 +1,19 @@
 import React from "react";
+import tool1 from "../assets/images/tool-1.png";
+import tool2 from "../assets/images/tool-2.png";
+import tool3 from "../assets/images/tool-3.png";
+import tool4 from "../assets/images/tool-4.png";
+import tool5 from "../assets/images/tool-5.png";
+import tool6 from "../assets/images/tool-6.png";
+import tool7 from "../assets/images/tool-7.png";
+import tool8 from "../assets/images/tool-8.png";
+import tool9 from "../assets/images/tool-9.png";
+import tool10 from "../assets/images/tool-10.png";
+import tool11 from "../assets/images/tool-11.png";
+import tool12 from "../assets/images/tool-12.png";
+import tool13 from "../assets/images/tool-13.png";
+import tool14 from "../assets/images/tool-14.png";
+
 
 import { Footer, Navbar } from "../components/index";
 
@@ -154,104 +169,53 @@ const Home = ({ portfolio, language, setLanguage }) => {
                 </div>
               </div>
 
-              <div className="bg-blue rounded px-3 px-md-5 py-5 text-white mb-5">
+              <div className="bg-blue-light rounded px-3 px-md-5 py-5 text-white mb-5">
                 <h5 className="fw-bold text-center mb-3 lh-3">
                   {language === "de" ? "Werkzeuge" : "Tools"}
                 </h5>
-                <p className="lh-3 px-lg-5 mb-5">
-                  {language === "de"
-                    ? 'Werkzeuge sind großartig, aber sind sie auch wichtig? Die Ergebnisse sind das, was die Welt sehen will. Ich habe meine Karriere als Designer mit Adobe Photoshop begonnen. Seitdem habe ich mich dazu durchgerungen, so viele Geräte wie möglich zu benutzen, ohne einem anderen Werkzeug, das meinen Arbeitsprozess möglicherweise verbessern könnte, negativ gegenüberzustehen oder es zu überhöhen. In einem der Designbücher, die ich vor einiger Zeit gelesen habe, habe ich dieses Zitat gelesen: "Der frühe Vogel fängt den Wurm". Ich lese nicht nur Blogs über ein neues Tool, ich kämpfe mich wirklich durch und mache mich mit ihm vertraut.'
-                    : 'Tools are great but do they matter? The results are what the world wants to see. I began my design career using Adobe Photoshop. Since then, I have driven myself to advance whatever number of devices would be prudent without being negative or pompous of another tool that might possibly improve my work process. I saw this quote in one of the design books I read sometimes ago, "the early bird gets the worm". I do not just read blogs about a new tool, I really battle through and get familiar with it.'}
-                </p>
-                <div className="row g-5">
-                  <div className="col-6 col-md-4 col-lg-3 text-center">
-                    <img
-                      src={require("../assets/images/tools/figma.jpeg")}
-                      alt="Figma"
-                      className="tools-img mb-2"
-                    />
-                    <p className="opaq">Figma</p>
+                
+                <div className="about-row justify-content-center p-lg-5 p-md-3 p-sm-2 p-1 ">
+                  <div  className="about-image-div">
+                    <img src={tool1} alt="Ux design tools icon" className="about-image"/>
                   </div>
-
-                  <div className="col-6 col-md-4 col-lg-3 text-center">
-                    <img
-                      src={require("../assets/images/tools/sketch.png")}
-                      alt="Sketch"
-                      className="tools-img mb-2"
-                    />
-                    <p className="opaq">Sketch</p>
+                  <div  className="about-image-div">
+                    <img src={tool2} alt="Ux design tools icon" className="about-image"/>
                   </div>
-
-                  <div className="col-6 col-md-4 col-lg-3 text-center">
-                    <img
-                      src={require("../assets/images/tools/xd.png")}
-                      alt="Adobe XD"
-                      className="tools-img mb-2"
-                    />
-                    <p className="opaq">Adobe XD</p>
+                  <div  className="about-image-div">
+                    <img src={tool3} alt="Ux design tools icon" className="about-image"/>
                   </div>
-
-                  <div className="col-6 col-md-4 col-lg-3 text-center">
-                    <img
-                      src={require("../assets/images/tools/adobeId.png")}
-                      alt="Adobe inDesign"
-                      className="tools-img mb-2"
-                    />
-                    <p className="opaq">Adobe inDesign</p>
+                  <div  className="about-image-div">
+                    <img src={tool4} alt="Ux design tools icon" className="about-image"/>
                   </div>
-
-                  <div className="col-6 col-md-4 col-lg-3 text-center">
-                    <img
-                      src={require("../assets/images/tools/adobePs.png")}
-                      alt="Adobe Photoshop"
-                      className="tools-img mb-2"
-                    />
-                    <p className="opaq">Adobe Photoshop</p>
+                  <div  className="about-image-div">
+                    <img src={tool5} alt="Ux design tools icon" className="about-image"/>
                   </div>
-
-                  <div className="col-6 col-md-4 col-lg-3 text-center">
-                    <img
-                      src={require("../assets/images/tools/adobeI.png")}
-                      alt="Adobe Illustrator"
-                      className="tools-img mb-2"
-                    />
-                    <p className="opaq">Adobe Illustrator</p>
+                  <div  className="about-image-div">
+                    <img src={tool6} alt="Ux design tools icon" className="about-image"/>
                   </div>
-
-                  <div className="col-6 col-md-4 col-lg-3 text-center">
-                    <img
-                      src={require("../assets/images/tools/inVision.png")}
-                      alt="inVision"
-                      className="tools-img mb-2"
-                    />
-                    <p className="opaq">inVision</p>
+                  <div  className="about-image-div">
+                    <img src={tool7} alt="Ux design tools icon" className="about-image"/>
                   </div>
-
-                  <div className="col-6 col-md-4 col-lg-3 text-center">
-                    <img
-                      src={require("../assets/images/tools/html.png")}
-                      alt="HTML 5"
-                      className="tools-img mb-2"
-                    />
-                    <p className="opaq">HTML 5</p>
+                  <div  className="about-image-div">
+                    <img src={tool8} alt="Ux design tools icon" className="about-image"/>
                   </div>
-
-                  <div className="col-6 col-md-4 col-lg-3 text-center">
-                    <img
-                      src={require("../assets/images/tools/css.png")}
-                      alt="CSS"
-                      className="tools-img mb-2"
-                    />
-                    <p className="opaq">CSS</p>
+                  <div  className="about-image-div">
+                    <img src={tool9} alt="Ux design tools icon" className="about-image"/>
                   </div>
-
-                  <div className="col-6 col-md-4 col-lg-3 text-center">
-                    <img
-                      src={require("../assets/images/tools/unity.PNG")}
-                      alt="Unity"
-                      className="tools-img mb-2"
-                    />
-                    <p className="opaq">Unity</p>
+                  <div  className="about-image-div">
+                    <img src={tool10} alt="Ux design tools icon" className="about-image"/>
+                  </div>
+                  <div  className="about-image-div">
+                    <img src={tool11} alt="Ux design tools icon" className="about-image"/>
+                  </div>
+                  <div  className="about-image-div">
+                    <img src={tool12} alt="Ux design tools icon" className="about-image"/>
+                  </div>
+                  <div  className="about-image-div">
+                    <img src={tool13} alt="Ux design tools icon" className="about-image"/>
+                  </div>
+                  <div  className="about-image-div">
+                    <img src={tool14} alt="Ux design tools icon" className="about-image"/>
                   </div>
                 </div>
               </div>

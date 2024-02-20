@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import profileImage from "../assets/images/profileImage.png";
+import profileEnglish from "../assets/images/project-english.png";
+import profileGerman from "../assets/images/project-german.png";
 import { TbCaretDown, TbMenu2, TbX } from "react-icons/tb";
 
 const Navbar = ({ portfolio, language, setLanguage, id }) => {
@@ -228,8 +230,8 @@ const Navbar = ({ portfolio, language, setLanguage, id }) => {
                     value={language}
                     className="form-select shadow-none"
                   >
-                    <option value="en">EN</option>
-                    <option value="de">DE</option>
+                    <option value="en">English</option>
+                    <option value="de">Deutsch</option>
                   </select>
                 </div>
               </div>

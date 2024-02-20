@@ -155,6 +155,9 @@ code {
 .bg-blue {
   background-color: var(--bg-blue);
 }
+.bg-blue-light {
+  background-color: var(--bg-light);
+}
 .text-blue {
   color: var(--bg-blue);
 }
@@ -204,6 +207,11 @@ hr.bg-blue {
   z-index: 999;
   border-radius: 8px;
 }
+.ceo-img{
+  width: 34.05rem;
+  height: 43.125rem;
+}
+
 .arrows {
   border: 1px solid var(--bg-blue);
   color: var(--bg-blue);
@@ -331,7 +339,109 @@ hr.bg-blue {
 .my-dropcontent .my-dropcontent-link:hover {
   background-color: #ddd;
 }
+
+.intro-font{
+  font-size: 95.57px;
+  line-height: 95.57px;
+}
+.project-maxwidth{
+  max-width: 913px;
+  padding: 3rem 0 0 0;
+}
+.project-maxwidth-germany{
+  max-width: 1013px;
+  padding: 4rem 0 0 0;
+}
+.project-padding{
+  padding: 2.9rem 0rem;
+}
+.design-img{
+  width: 40px;
+  height: 40px;
+}
+.about-image{
+  width: 40px;
+  height: 40px
+}
+.about-row{
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  justify-items: center;
+  gap: 1rem;
+  column-gap: 1.5rem;
+  align-items: center;
+}
+.about-image-div{
+  height: 60px;
+  width: 60px;
+padding: 2rem 1rem;
+background-color: #251C31;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.ceo-arrow{
+  position:absolute;
+  top: -59px;
+  left: 27%;
+}
+.ceo_bg{
+  background-image: url("../images/ceo_bg.png");
+  background-size: cover;
+  position: relative;
+}
+.ceo-icon{
+  top: 40%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 1300px){
+  .intro-font{
+    font-size: 80.57px;
+    line-height: 80.57px;
+  }
+  .project-maxwidth{
+    padding: 3rem 0 0 0;
+  }
+  .project-maxwidth-germany{
+    padding: 3rem 0 0 0;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .about-row{
+   
+    grid-template-columns: repeat(6, 1fr);
+    
+  }
+  .project-maxwidth{
+    padding: 2.5rem 0 0 0;
+  }
+  .project-maxwidth-germany{
+    padding: 2.5rem 0 0 0;
+  }
+  .intro-font{
+    font-size: 65.57px;
+    line-height: 65.57px;
+  }
+}
 @media screen and (max-width: 767px) {
+  .about-row{
+   
+    grid-template-columns: repeat(3, 1fr);
+    
+  }
+  .project-maxwidth{
+    padding: 2rem 0 0 0;
+  }
+  .project-maxwidth-germany{
+    padding: 2rem 0 0 0;
+  }
+  .intro-font{
+    font-size: 40.57px;
+    line-height: 40.57px;
+  }
   .sidebar {
     position: fixed;
     background-color: #fff;
@@ -397,6 +507,18 @@ hr.bg-blue {
   }
   .my-dropcontent .my-dropcontent-link:hover {
     background-color: inherit;
+  }
+}
+@media screen and (max-width: 400px) {
+  .intro-font{
+    font-size: 36px;
+    line-height: 30px;
+  }
+  .project-maxwidth{
+    padding: 1rem 0 0 0;
+  }
+  .project-maxwidth-germany{
+    padding: 1rem 0 0 0;
   }
 }
 .markdown img {
