@@ -91,7 +91,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
                 </div>
               </div>
               <div className="d-md-flex align-items-center">
-                <div className="w-100" style={{paddingLeft:"5rem"}}>
+                <div className="w-100" style={{paddingLeft:"2rem"}}>
                   <h5 className="fs-5 fs-md-4 fs-md-3 fs-sm-2">
                     Get to Meet Vincent Oluwadamilare Akinyoyenu — a versatile
                     UI/UX designer, functioning in the industry for 3+ years
@@ -168,7 +168,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
                 </div>
               </div>
               <div className="d-md-flex align-items-center">
-              <div className="w-100" style={{paddingLeft:"5rem"}}>
+              <div className="w-100" style={{paddingLeft:"2rem"}}>
                   <h5 className="fs-5">
                     Darf ich vorstellen: Vincent Oluwadamilare Akinyoyenu - ein
                     vielseitiger UI/UX-Designer, der seit über 3 Jahren in der
