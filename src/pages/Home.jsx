@@ -91,7 +91,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
                 </div>
               </div>
               <div className="d-md-flex align-items-center">
-                <div className="w-100" style={{paddingLeft:"2rem"}}>
+                <div className="w-100" style={{paddingLeft:"5rem"}}>
                   <h5 className="fs-5 fs-md-4 fs-md-3 fs-sm-2">
                     Get to Meet Vincent Oluwadamilare Akinyoyenu — a versatile
                     UI/UX designer, functioning in the industry for 3+ years
@@ -121,8 +121,8 @@ const Home = ({ portfolio, language, setLanguage }) => {
                   </button>
                 </div>
 
-                <div className="w-100 d-flex justify-content-center ceo_bg">
-                  <img src={ceo} alt="Ceo" className="w-100" />
+                <div className="w-80 d-flex justify-content-center ceo_bg">
+                  <img src={ceo} alt="Ceo" className="w-80" />
                   <img
                     src={ceoIcon}
                     alt="icons img"
@@ -168,7 +168,7 @@ const Home = ({ portfolio, language, setLanguage }) => {
                 </div>
               </div>
               <div className="d-md-flex align-items-center">
-              <div className="w-100" style={{paddingLeft:"2rem"}}>
+              <div className="w-100" style={{paddingLeft:"5rem"}}>
                   <h5 className="fs-5">
                     Darf ich vorstellen: Vincent Oluwadamilare Akinyoyenu - ein
                     vielseitiger UI/UX-Designer, der seit über 3 Jahren in der
@@ -199,8 +199,8 @@ const Home = ({ portfolio, language, setLanguage }) => {
                   </button>
                 </div>
 
-                <div className="w-100 d-flex justify-content-center ceo_bg">
-                  <img src={ceo} alt="Ceo" className="w-100" />
+                <div className="w-80 d-flex justify-content-center ceo_bg">
+                  <img src={ceo} alt="Ceo" className="w-80" />
                   <img
                     src={ceoIcon}
                     alt="icons img"
